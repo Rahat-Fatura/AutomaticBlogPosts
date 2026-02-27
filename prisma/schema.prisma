@@ -1,0 +1,85 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum AnnouncementStatus {
+  new
+  filtered
+  processed
+  rejected
+}
+
+enum AiGenerationStatus {
+  none
+  queued
+  running
+  done
+  error
+}
+
+enum DraftStatus {
+  pending
+  approved
+  published
+  rejected
+}
+
+model Source {
+  id                 String         @id @default(uuid()) @db.Uuid
+  name               String
+  url                String         @unique
+  isActive           Boolean        @default(true)
+  checkIntervalHours Int            @default(6)
+  createdAt          DateTime       @default(now())
+
+  announcements      Announcement[]
+}
+
+model Announcement {
+  id           String             @id @default(uuid()) @db.Uuid
+  sourceId     String             @db.Uuid
+  title        String
+  content      String
+  originalUrl  String             @unique
+  contentHash  String             @unique
+  status       AnnouncementStatus @default(new)
+  fetchedAt    DateTime
+  createdAt    DateTime           @default(now())
+
+  aiStatus         AiGenerationStatus @default(none)
+  aiTitle          String?
+  aiContent        String?
+  aiExcerpt        String?
+  aiMetaDescription String?
+  aiError          String?
+  aiUpdatedAt      DateTime?
+  wpPostId         Int?               @unique
+
+  source       Source             @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+  draft        Draft?
+
+  @@index([sourceId])
+  @@index([status])
+  @@index([aiStatus])
+  @@index([wpPostId])
+}
+
+model Draft {
+  id             String      @id @default(uuid()) @db.Uuid
+  announcementId String      @unique @db.Uuid
+  title          String
+  content        String
+  metaDescription String?
+  status         DraftStatus @default(pending)
+  createdAt      DateTime    @default(now())
+  publishedAt    DateTime?
+
+  announcement   Announcement @relation(fields: [announcementId], references: [id], onDelete: Cascade)
+
+  @@index([status])
+}
