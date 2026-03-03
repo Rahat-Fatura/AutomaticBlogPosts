@@ -68,3 +68,4 @@ test-*.js
 /wordpress/readme.html
 /wordpress/.htaccess
 /wordpress/wp-config.php
+wordpress_backup.sql
