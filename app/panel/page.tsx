@@ -3,8 +3,10 @@
 import { useEffect, useMemo, useState } from 'react'
 import PostsPanel from '@/components/panel/PostsPanel'
 import ScraperPanel from '@/components/panel/ScraperPanel'
+import EmailPanel from '@/components/panel/EmailPanel'
+import DraftsPanel from '@/components/panel/DraftsPanel'
 
-type TabKey = 'posts' | 'scraper'
+type TabKey = 'posts' | 'drafts' | 'scraper' | 'email'
 
 const TAB_KEY = 'panel_tab'
 
@@ -13,7 +15,7 @@ export default function PanelPage() {
 
   useEffect(() => {
     const saved = (typeof window !== 'undefined' ? window.localStorage.getItem(TAB_KEY) : null) as TabKey | null
-    if (saved === 'posts' || saved === 'scraper') {
+    if (saved === 'posts' || saved === 'drafts' || saved === 'scraper' || saved === 'email') {
       setTab(saved)
     }
   }, [])
@@ -25,6 +27,8 @@ export default function PanelPage() {
 
   const content = useMemo(() => {
     if (tab === 'scraper') return <ScraperPanel />
+    if (tab === 'email') return <EmailPanel />
+    if (tab === 'drafts') return <DraftsPanel />
     return <PostsPanel />
   }, [tab])
 
@@ -50,7 +54,9 @@ export default function PanelPage() {
 
         <div className="flex flex-wrap items-center gap-2">
           {tabBtn('posts', 'Yazılar')}
+          {tabBtn('drafts', 'Taslaklar')}
           {tabBtn('scraper', 'Scraper')}
+          {tabBtn('email', 'Email Ayarları')}
         </div>
       </div>
 

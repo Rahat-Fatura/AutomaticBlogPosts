@@ -1,0 +1,3239 @@
+/*  
+
+	Author : Amedea
+	Author URI : https://amedeapro.com
+	Author : Moskva Yigit
+	Author URI : http://moskvayigit.com
+	Version : 0.0.3.9
+
+	Table of Contents
+	- Christmas Special #1
+	- Christmas Special #2
+	 
+*/
+
+.ki-description{width:100%;}
+	
+/*----------------------------
+	.-- Christmas Special #1
+-----------------------------*/
+
+.christmas--css-container {
+	height: 100vh;
+	width: 100%;
+}
+
+.christmas--css__special {
+	background: #de2f32;
+}
+
+.christmas--css__special::selection {
+	background: rgba(255, 255, 0, 0.5);
+}
+
+.christmas--css__window {
+	width: 340px;
+	height: 340px;
+	background: #a0d5d3;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	margin-top: -60px;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 10px solid #f8e7dc;
+	overflow: hidden;
+}
+
+.christmas--css__santa {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.christmas--css__santa .christmas--css__body {
+	width: 190px;
+	height: 210px;
+	background: #de2f32;
+	position: relative;
+	border-radius: 50%;
+	top: 0;
+	-webkit-animation: bodyLaugh 4s linear infinite;
+	-moz-animation: bodyLaugh 4s linear infinite;
+	-ms-animation: bodyLaugh 4s linear infinite;
+	-o-animation: bodyLaugh 4s linear infinite;
+	animation: bodyLaugh 4s linear infinite;
+	-webkit-transform: translateY(50%);
+	-moz-transform: translateY(50%);
+	-ms-transform: translateY(50%);
+	-o-transform: translateY(50%);
+	transform: translateY(50%);
+}
+
+.christmas--css__santa .christmas--css__body:before {
+	content: " ";
+	width: 7px;
+	height: 7px;
+	background: #f7be10;
+	border-radius: 50%;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	box-shadow: 0px -18px 0px #f7be10, 0px 18px 0px #f7be10;
+}
+
+.christmas--css__santa .christmas--css__head {
+	z-index: 2;
+	position: absolute;
+	bottom: 90px;
+	left: 50%;
+	-webkit-animation: headLaugh 4s linear infinite;
+	-moz-animation: headLaugh 4s linear infinite;
+	-ms-animation: headLaugh 4s linear infinite;
+	-o-animation: headLaugh 4s linear infinite;
+	animation: headLaugh 4s linear infinite;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face {
+	width: 120px;
+	height: 130px;
+	background: #edcab0;
+	background: radial-gradient(#edcab0, #e9a982);
+	border-radius: 50%;
+	border: 3px solid #f8e7dc;
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__redhat .christmas--css__whitepart {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 90%;
+	height: 32px;
+	background: #f8e7dc;
+	border-radius: 50px;
+	z-index: 4;
+	box-shadow: 0px 6px 0px -4px rgba(0, 0, 0, 0.1);
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__redhat .christmas--css__redpart {
+	width: 120px;
+	height: 120px;
+	background: #de2f32;
+	position: absolute;
+	top: -50px;
+	left: 15px;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__redhat .christmas--css__redpart:before {
+	content: " ";
+	width: 95px;
+	height: 95px;
+	position: absolute;
+	left: 0;
+	top: 12px;
+	border-radius: 50%;
+	box-shadow: inset -8px -1px 0px -5px rgba(0, 0, 0, 0.05);
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__redhat .christmas--css__redpart:after {
+	content: " ";
+	position: absolute;
+	right: 0;
+	top: 60px;
+	background: #de2f32;
+	width: 20px;
+	height: 50px;
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__redhat .christmas--css__hatball {
+	width: 38px;
+	height: 38px;
+	background: #f8e7dc;
+	border-radius: 50%;
+	z-index: 5;
+	position: absolute;
+	right: -20px;
+	top: 40px;
+	box-shadow: 0px 6px 0px -4px rgba(0, 0, 0, 0.1);
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__eyes {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	top: 57px;
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__eyes:before,
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__eyes:after {
+	content: " ";
+	position: absolute;
+	width: 15px;
+	height: 9px;
+	top: 0;
+	border: 5px solid #a8744f;
+	border-width: 0;
+	border-top-width: 5px;
+	border-radius: 50%;
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__eyes:before {
+	left: -28px;
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__eyes:after {
+	right: -28px;
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__beard {
+	width: 55px;
+	height: 55px;
+	background: #f8e7dc;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	-webkit-animation: beardLaugh 4s linear infinite;
+	-moz-animation: beardLaugh 4s linear infinite;
+	-ms-animation: beardLaugh 4s linear infinite;
+	-o-animation: beardLaugh 4s linear infinite;
+	animation: beardLaugh 4s linear infinite;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__beard:before,
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__beard:after {
+	content: " ";
+	width: 80px;
+	height: 80px;
+	background: #f8e7dc;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 15px;
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__beard:before {
+	left: -40px;
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__beard:after {
+	right: -40px;
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__beard .christmas--css__nouse {
+	width: 25px;
+	height: 20px;
+	border-radius: 50%;
+	background: #edcab0;
+	position: absolute;
+	z-index: 3;
+	box-shadow: inset -3px -3px 0px #e9a982;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	top: -42px;
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__face .christmas--css__beard .christmas--css__mouth {
+	background: #a8744f;
+	z-index: 3;
+	position: absolute;
+	width: 15px;
+	height: 5px;
+	border-bottom-right-radius: 80px 50px;
+	border-bottom-left-radius: 80px 50px;
+	left: 50%;
+	top: 0;
+	-webkit-animation: mouthLaugh 4s linear infinite;
+	-moz-animation: mouthLaugh 4s linear infinite;
+	-ms-animation: mouthLaugh 4s linear infinite;
+	-o-animation: mouthLaugh 4s linear infinite;
+	animation: mouthLaugh 4s linear infinite;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__ears:before,
+.christmas--css__santa .christmas--css__head .christmas--css__ears:after {
+	content: " ";
+	width: 20px;
+	height: 30px;
+	border-radius: 50%;
+	background: radial-gradient(#e9a982, #edcab0);
+	position: absolute;
+	top: 50%;
+	z-index: -1;
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__ears:before {
+	left: -8px;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+.christmas--css__santa .christmas--css__head .christmas--css__ears:after {
+	right: -8px;
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+
+@font-face {
+	font-family: 'Mountains of Christmas';
+	font-style: normal;
+	src: local("Mountains of Christmas"), local("MountainsofChristmas-Regular"), url(https://fonts.gstatic.com/s/mountainsofchristmas/v8/dVGBFPwd6G44IWDbQtPewylJhLDHyIrT3I5b5eGTHmw.woff2) format("woff2");
+}
+
+.christmas--css__message {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: 80px;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	color: #f8e7dc;
+}
+
+.christmas--css__message h1 {
+	font-style: normal;
+	font-size: 75px;
+	margin-bottom: 0;
+	white-space: nowrap;
+	font-family: 'Mountains of Christmas';
+}
+
+@-webkit-keyframes bodyLaugh {
+	0% {
+		top: 0px;
+	}
+
+	2% {
+		top: -3px;
+	}
+
+	4% {
+		top: 0px;
+	}
+
+	8% {
+		top: -3px;
+	}
+
+	10% {
+		top: 0px;
+	}
+
+	12% {
+		top: -3px;
+	}
+
+	14% {
+		top: 0px;
+	}
+
+	18% {
+		top: -3px;
+	}
+
+	20% {
+		top: 0px;
+	}
+
+	22% {
+		top: -3px;
+	}
+
+	24% {
+		top: 0px;
+	}
+
+	28% {
+		top: -3px;
+	}
+
+	30% {
+		top: 0px;
+	}
+
+	100% {
+		top: 0px;
+	}
+}
+
+@-moz-keyframes bodyLaugh {
+	0% {
+		top: 0px;
+	}
+
+	2% {
+		top: -3px;
+	}
+
+	4% {
+		top: 0px;
+	}
+
+	8% {
+		top: -3px;
+	}
+
+	10% {
+		top: 0px;
+	}
+
+	12% {
+		top: -3px;
+	}
+
+	14% {
+		top: 0px;
+	}
+
+	18% {
+		top: -3px;
+	}
+
+	20% {
+		top: 0px;
+	}
+
+	22% {
+		top: -3px;
+	}
+
+	24% {
+		top: 0px;
+	}
+
+	28% {
+		top: -3px;
+	}
+
+	30% {
+		top: 0px;
+	}
+
+	100% {
+		top: 0px;
+	}
+}
+
+@-ms-keyframes bodyLaugh {
+	0% {
+		top: 0px;
+	}
+
+	2% {
+		top: -3px;
+	}
+
+	4% {
+		top: 0px;
+	}
+
+	8% {
+		top: -3px;
+	}
+
+	10% {
+		top: 0px;
+	}
+
+	12% {
+		top: -3px;
+	}
+
+	14% {
+		top: 0px;
+	}
+
+	18% {
+		top: -3px;
+	}
+
+	20% {
+		top: 0px;
+	}
+
+	22% {
+		top: -3px;
+	}
+
+	24% {
+		top: 0px;
+	}
+
+	28% {
+		top: -3px;
+	}
+
+	30% {
+		top: 0px;
+	}
+
+	100% {
+		top: 0px;
+	}
+}
+
+@keyframes bodyLaugh {
+	0% {
+		top: 0px;
+	}
+
+	2% {
+		top: -3px;
+	}
+
+	4% {
+		top: 0px;
+	}
+
+	8% {
+		top: -3px;
+	}
+
+	10% {
+		top: 0px;
+	}
+
+	12% {
+		top: -3px;
+	}
+
+	14% {
+		top: 0px;
+	}
+
+	18% {
+		top: -3px;
+	}
+
+	20% {
+		top: 0px;
+	}
+
+	22% {
+		top: -3px;
+	}
+
+	24% {
+		top: 0px;
+	}
+
+	28% {
+		top: -3px;
+	}
+
+	30% {
+		top: 0px;
+	}
+
+	100% {
+		top: 0px;
+	}
+}
+
+@-webkit-keyframes beardLaugh {
+	0% {
+		bottom: -28px;
+	}
+
+	2% {
+		bottom: -30px;
+	}
+
+	4% {
+		bottom: -28px;
+	}
+
+	8% {
+		bottom: -30px;
+	}
+
+	10% {
+		bottom: -28px;
+	}
+
+	12% {
+		bottom: -30px;
+	}
+
+	14% {
+		bottom: -28px;
+	}
+
+	18% {
+		bottom: -30px;
+	}
+
+	20% {
+		bottom: -28px;
+	}
+
+	22% {
+		bottom: -30px;
+	}
+
+	24% {
+		bottom: -28px;
+	}
+
+	28% {
+		bottom: -30px;
+	}
+
+	30% {
+		bottom: -28px;
+	}
+
+	100% {
+		bottom: -28px;
+	}
+}
+
+@-moz-keyframes beardLaugh {
+	0% {
+		bottom: -28px;
+	}
+
+	2% {
+		bottom: -30px;
+	}
+
+	4% {
+		bottom: -28px;
+	}
+
+	8% {
+		bottom: -30px;
+	}
+
+	10% {
+		bottom: -28px;
+	}
+
+	12% {
+		bottom: -30px;
+	}
+
+	14% {
+		bottom: -28px;
+	}
+
+	18% {
+		bottom: -30px;
+	}
+
+	20% {
+		bottom: -28px;
+	}
+
+	22% {
+		bottom: -30px;
+	}
+
+	24% {
+		bottom: -28px;
+	}
+
+	28% {
+		bottom: -30px;
+	}
+
+	30% {
+		bottom: -28px;
+	}
+
+	100% {
+		bottom: -28px;
+	}
+}
+
+@-ms-keyframes beardLaugh {
+	0% {
+		bottom: -28px;
+	}
+
+	2% {
+		bottom: -30px;
+	}
+
+	4% {
+		bottom: -28px;
+	}
+
+	8% {
+		bottom: -30px;
+	}
+
+	10% {
+		bottom: -28px;
+	}
+
+	12% {
+		bottom: -30px;
+	}
+
+	14% {
+		bottom: -28px;
+	}
+
+	18% {
+		bottom: -30px;
+	}
+
+	20% {
+		bottom: -28px;
+	}
+
+	22% {
+		bottom: -30px;
+	}
+
+	24% {
+		bottom: -28px;
+	}
+
+	28% {
+		bottom: -30px;
+	}
+
+	30% {
+		bottom: -28px;
+	}
+
+	100% {
+		bottom: -28px;
+	}
+}
+
+@keyframes beardLaugh {
+	0% {
+		bottom: -28px;
+	}
+
+	2% {
+		bottom: -30px;
+	}
+
+	4% {
+		bottom: -28px;
+	}
+
+	8% {
+		bottom: -30px;
+	}
+
+	10% {
+		bottom: -28px;
+	}
+
+	12% {
+		bottom: -30px;
+	}
+
+	14% {
+		bottom: -28px;
+	}
+
+	18% {
+		bottom: -30px;
+	}
+
+	20% {
+		bottom: -28px;
+	}
+
+	22% {
+		bottom: -30px;
+	}
+
+	24% {
+		bottom: -28px;
+	}
+
+	28% {
+		bottom: -30px;
+	}
+
+	30% {
+		bottom: -28px;
+	}
+
+	100% {
+		bottom: -28px;
+	}
+}
+
+@-webkit-keyframes headLaugh {
+	0% {
+		bottom: 83px;
+	}
+
+	45% {
+		bottom: 83px;
+	}
+
+	50% {
+		bottom: 90px;
+	}
+
+	92% {
+		bottom: 90px;
+	}
+
+	98% {
+		bottom: 83px;
+	}
+
+	100% {
+		bottom: 83px;
+	}
+}
+
+@-moz-keyframes headLaugh {
+	0% {
+		bottom: 83px;
+	}
+
+	45% {
+		bottom: 83px;
+	}
+
+	50% {
+		bottom: 90px;
+	}
+
+	92% {
+		bottom: 90px;
+	}
+
+	98% {
+		bottom: 83px;
+	}
+
+	100% {
+		bottom: 83px;
+	}
+}
+
+@-ms-keyframes headLaugh {
+	0% {
+		bottom: 83px;
+	}
+
+	45% {
+		bottom: 83px;
+	}
+
+	50% {
+		bottom: 90px;
+	}
+
+	92% {
+		bottom: 90px;
+	}
+
+	98% {
+		bottom: 83px;
+	}
+
+	100% {
+		bottom: 83px;
+	}
+}
+
+@keyframes headLaugh {
+	0% {
+		bottom: 83px;
+	}
+
+	45% {
+		bottom: 83px;
+	}
+
+	50% {
+		bottom: 90px;
+	}
+
+	92% {
+		bottom: 90px;
+	}
+
+	98% {
+		bottom: 83px;
+	}
+
+	100% {
+		bottom: 83px;
+	}
+}
+
+@-webkit-keyframes mouthLaugh {
+	0% {
+		width: 20px;
+	}
+
+	45% {
+		width: 20px;
+	}
+
+	50% {
+		width: 15px;
+	}
+
+	92% {
+		width: 15px;
+	}
+
+	98% {
+		width: 20px;
+	}
+
+	100% {
+		width: 20px;
+	}
+}
+
+@-moz-keyframes mouthLaugh {
+	0% {
+		width: 20px;
+	}
+
+	45% {
+		width: 20px;
+	}
+
+	50% {
+		width: 15px;
+	}
+
+	92% {
+		width: 15px;
+	}
+
+	98% {
+		width: 20px;
+	}
+
+	100% {
+		width: 20px;
+	}
+}
+
+@-ms-keyframes mouthLaugh {
+	0% {
+		width: 20px;
+	}
+
+	45% {
+		width: 20px;
+	}
+
+	50% {
+		width: 15px;
+	}
+
+	92% {
+		width: 15px;
+	}
+
+	98% {
+		width: 20px;
+	}
+
+	100% {
+		width: 20px;
+	}
+}
+
+@keyframes mouthLaugh {
+	0% {
+		width: 20px;
+	}
+
+	45% {
+		width: 20px;
+	}
+
+	50% {
+		width: 15px;
+	}
+
+	92% {
+		width: 15px;
+	}
+
+	98% {
+		width: 20px;
+	}
+
+	100% {
+		width: 20px;
+	}
+}
+
+/*----------------------------
+	.-- Christmas Special #2
+-----------------------------*/
+
+.christmas--css__special2 *,
+.christmas--css__special2 :after,
+.christmas--css__special2 :before {
+    box-sizing: content-box;
+}
+
+.christmas--css__special2 {
+	/*background-color: #f8f9fa;*/
+	height: auto;
+}
+	
+.christmas--css__special2-container {
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	min-height: 450px;
+	margin: 40px auto 50px auto;
+	position: relative;
+	width: 450px;
+}
+
+.xmas--css__artboard {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.xmas--css__deer {
+	width: 50px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.xmas--css__rocking {
+	animation: rocking .4s ease-in-out infinite alternate-reverse;
+	transform-origin: bottom left;
+	position: relative;
+	z-index: 1;
+}
+
+.xmas--css__head {
+	position: relative;
+	width: 50px;
+}
+
+.xmas--css__horns {
+	animation: rocking 0.4s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate-reverse;
+	height: 55px;
+	position: relative;
+	top: 21px;
+	width: 50px;
+}
+
+.xmas--css__horn {
+	position: relative;
+}
+
+.xmas--css__horn:before {
+	background-color: #91655d;
+	border-radius: 7px 7px 0 0;
+	content: '';
+	display: block;
+	height: 55px;
+	position: absolute;
+	width: 7px;
+	z-index: 1;
+}
+
+.xmas--css__horn .xmas--css__line {
+	background-color: #91655d;
+	border-radius: 7px 0 0 7px;
+	height: 7px;
+	width: 20px;
+	margin-bottom: 15px;
+	position: relative;
+	top: 10px;
+}
+
+.xmas--css__horn .xmas--css__line-one {
+	width: 15px;
+}
+
+.xmas--css__horn .xmas--css__line-three {
+	top: -22px;
+	width: 17px;
+}
+
+.xmas--css__horn-left {
+	top: -7px;
+	transform: rotate(-25deg);
+}
+
+.xmas--css__horn-left:before {
+	box-shadow: inset 2px 0 0 0 #9c7169;
+}
+
+.xmas--css__horn-left .xmas--css__line {
+	box-shadow: inset 0 2px 0 0 #9c7169;
+	right: 15px;
+	transform: rotate(30deg);
+}
+
+.xmas--css__horn-left .xmas--css__line-one {
+	right: 10px;
+}
+
+.xmas--css__horn-left .xmas--css__line-three {
+	box-shadow: inset 0 -2px 0 0 #9c7169;
+	right: -3px;
+	transform: rotate(160deg);
+}
+
+.xmas--css__horn-right {
+	bottom: 55px;
+	left: 40px;
+	transform: rotate(25deg);
+}
+
+.xmas--css__horn-right:before {
+	box-shadow: inset -2px 0 0 0 #835f5a;
+}
+
+.xmas--css__horn-right .xmas--css__line {
+	box-shadow: inset 0 2px 0 0 #835f5a;
+	right: -2px;
+	transform: rotate(150deg);
+}
+
+.xmas--css__horn-right .xmas--css__line-three {
+	right: 13px;
+	transform: rotate(20deg);
+}
+
+.xmas--css__ears {
+	position: absolute;
+	top: 70px;
+}
+
+.xmas--css__ear {
+	background-color: #91655d;
+	border-radius: 100% 50% 50% 50%;
+	height: 18px;
+	position: relative;
+	right: 20px;
+	top: 10px;
+	transform: rotate(30deg);
+	transform-origin: 100%;
+	width: 30px;
+}
+
+.xmas--css__ear:before {
+	background-color: #e7beb2;
+	border-radius: 100% 50% 50% 50%;
+	height: 9px;
+	content: '';
+	display: block;
+	left: 5px;
+	position: relative;
+	top: 5px;
+	width: 15px;
+}
+
+.xmas--css__ear-left {
+	animation: ear-left 2s cubic-bezier(0.6, -0.28, 0.74, 0.05) infinite alternate-reverse;
+	transform: rotate(30deg);
+}
+
+.xmas--css__ear-right {
+	animation: ear-right 2s cubic-bezier(0.6, -0.28, 0.74, 0.05) 2s infinite alternate-reverse;
+	left: 10px;
+	right: 0;
+	top: -8px;
+	transform: rotate(160deg);
+}
+
+.xmas--css__eyes {
+	position: absolute;
+	top: 90px;
+	right: -5px;
+	width: 32px;
+	z-index: 2;
+}
+
+.xmas--css__eyes .xmas--css__eye {
+	background: linear-gradient(0deg, white 50%, #aa8275 50%);
+	border-radius: 15px;
+	height: 15px;
+	width: 15px;
+}
+
+.xmas--css__eyes .xmas--css__eye:before {
+	animation: eaves 3s infinite alternate-reverse;
+	background-color: #aa8275;
+	border-radius: 9px 9px 0 0;
+	height: 9px;
+	content: '';
+	display: block;
+	position: relative;
+	width: 15px;
+	top: -1px;
+	z-index: 1;
+}
+
+.xmas--css__eyes .xmas--css__eye:after {
+	animation: eyes 3s infinite alternate-reverse;
+	background-color: #495169;
+	border-radius: 5px;
+	height: 5px;
+	content: '';
+	display: block;
+	left: 5px;
+	position: relative;
+	top: -3px;
+	transform: translate(3px, 2px);
+	width: 5px;
+}
+
+.xmas--css__eyes .xmas--css__eye-left {
+	float: left;
+}
+
+.xmas--css__eyes .xmas--css__eye-right {
+	float: right;
+}
+
+.xmas--css__nose {
+	background-color: #91655d;
+	border-radius: 0 7px 15px;
+	top: 47px;
+	height: 18px;
+	left: 40px;
+	position: relative;
+	width: 20px;
+	z-index: 2;
+}
+
+.xmas--css__nose:before {
+	background-color: #fb5d5d;
+	border-radius: 15px;
+	content: '';
+	display: block;
+	height: 14px;
+	position: absolute;
+	right: -.5px;
+	top: -.5px;
+	width: 16px;
+}
+
+.xmas--css__nose:after {
+	background-color: white;
+	border-radius: 5px;
+	content: '';
+	display: block;
+	height: 2px;
+	position: absolute;
+	right: 4px;
+	top: 2px;
+	width: 5px;
+}
+
+.xmas--css__deer-body {
+	background-color: #91655d;
+	border-radius: 50px 50px 0;
+	box-shadow: inset 7px 0 0 0 #9c7169;
+	height: 140px;
+	position: relative;
+	width: 50px;
+	z-index: 1;
+}
+
+.xmas--css__deer-body:before {
+	background-color: #e7beb2;
+	border-radius: 20px 0 0 20px;
+	bottom: 20px;
+	box-shadow: inset -7px 0 0 0 #c39e9a;
+	content: '';
+	display: block;
+	height: 65px;
+	position: absolute;
+	right: 0;
+	width: 20px;
+}
+
+.xmas--css__hooves {
+	position: relative;
+	bottom: 40px;
+	right: 34px;
+}
+
+.xmas--css__hoof-one {
+	animation: jump .3s ease-in-out infinite alternate-reverse;
+	left: 10px;
+	position: relative;
+	top: 70px;
+	transform: rotate(25deg);
+	transform-origin: 100% 50%;
+}
+
+.xmas--css__hoof-one .xmas--css__line {
+	height: 30px;
+	border: 20px solid;
+	border-radius: 40px;
+	border-color: transparent transparent #91655d transparent;
+	left: 25px;
+	width: 30px;
+	position: relative;
+	top: 5px;
+	transform: rotate(-30deg);
+}
+
+.xmas--css__hoof-one .xmas--css__anim-part {
+	position: relative;
+	bottom: 23px;
+	left: 81px;
+	transform: rotate(-75deg);
+	transform-origin: left;
+}
+
+.xmas--css__hoof-one .xmas--css__circle {
+	animation: hoof-one .3s ease-in-out infinite alternate-reverse;
+	background-color: #91655d;
+	height: 20px;
+	width: 20px;
+	border-radius: 30px;
+	transform: translateX(3px) rotate(0deg);
+}
+
+.xmas--css__hoof-one .xmas--css__circle-last {
+	border-radius: 20px 0 0 20px;
+	transform: translateX(2px) rotate(0deg);
+}
+
+.xmas--css__hoof-one .xmas--css__circle-last:before {
+	content: '';
+	display: block;
+	border-top: 20px solid #674a4a;
+	border-left: 7px solid transparent;
+	height: 0;
+	left: 10px;
+	width: 7px;
+	position: relative;
+	z-index: 1;
+}
+
+.xmas--css__hoof-one .xmas--css__circle-last:after {
+	background-color: #ffb63c;
+	border-radius: 10px;
+	bottom: 30px;
+	content: '';
+	display: block;
+	height: 40px;
+	left: 19px;
+	position: relative;
+	width: 9px;
+}
+
+.xmas--css__hoof-two {
+	animation: jump-two .3s ease-in-out infinite alternate-reverse;
+	left: 55px;
+	position: relative;
+	top: 10px;
+	z-index: -1;
+}
+
+.xmas--css__hoof-two .xmas--css__line-one,
+.xmas--css__hoof-two .xmas--css__line-two {
+	height: 10px;
+	border: 20px solid;
+	border-radius: 40px;
+	border-color: transparent transparent #91655d transparent;
+	width: 10px;
+	position: absolute;
+}
+
+.xmas--css__hoof-two .xmas--css__line-one {
+	transform: rotate(-45deg);
+}
+
+.xmas--css__hoof-two .xmas--css__line-two {
+	left: 30px;
+	transform: rotate(135deg);
+}
+
+.xmas--css__tail {
+	background-color: #9c7169;
+	bottom: 0;
+	left: 4px;
+	position: absolute;
+	width: 20px;
+	z-index: 0;
+}
+
+.xmas--css__tail .xmas--css__circle {
+	animation: tail 2s cubic-bezier(0, 0.02, 0.9, 2) infinite;
+	background-color: #9c7169;
+	border-radius: 11px;
+	height: 12px;
+	position: relative;
+	right: 2px;
+	transform: rotate(-5deg);
+	width: 12px;
+}
+
+.xmas--css__legs {
+	position: relative;
+}
+
+.xmas--css__legs:before {
+	background: linear-gradient(to left, #91655d 50%, #9c7169 50%);
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 10px;
+	left: 7px;
+	position: absolute;
+	width: 30px;
+	z-index: 0;
+}
+
+.xmas--css__leg-left:before,
+.xmas--css__leg-left:after,
+.xmas--css__leg-right:before,
+.xmas--css__leg-right:after {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+
+.xmas--css__leg-left .xmas--css__anim-part {
+	animation: leg-left .4s ease-out infinite alternate-reverse;
+	position: relative;
+	top: 1px;
+	transform: rotate(5deg) translateX(3px);
+	transform-origin: right;
+	z-index: 2;
+}
+
+.xmas--css__leg-left .xmas--css__anim-part:before,
+.xmas--css__leg-left .xmas--css__anim-part:after {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+
+.xmas--css__leg-left .xmas--css__anim-part:before {
+	height: 16px;
+	width: 16px;
+	border: 20px solid;
+	border-radius: 30px;
+	border-color: transparent #835f5b transparent transparent;
+	transform: rotate(-45deg);
+	top: -17px;
+	left: 17px;
+}
+
+.xmas--css__leg-left .xmas--css__anim-part .xmas--css__line {
+	background-color: #835f5b;
+	height: 25px;
+	position: absolute;
+	width: 20px;
+	left: 51px;
+	top: 7px;
+	z-index: 2;
+	transform: skew(-9deg);
+}
+
+.xmas--css__leg-left .xmas--css__anim-part:after {
+	background-color: #835f5b;
+	height: 20px;
+	left: 33px;
+	top: -20px;
+	width: 24px;
+}
+
+.xmas--css__leg-left:after {
+	background-color: #674a4a;
+	height: 13px;
+	left: 48px;
+	top: 32px;
+	transform: skew(-8deg);
+	width: 20px;
+	z-index: 2;
+}
+
+.xmas--css__leg-right {
+	position: relative;
+	right: 10px;
+}
+
+.xmas--css__leg-right:before {
+	height: 30px;
+	width: 38px;
+	border: 20px solid;
+	border-radius: 40px;
+	border-color: #91655d transparent transparent transparent;
+	transform: rotate(-15deg);
+	z-index: 3;
+	top: -29px;
+	left: 21px;
+}
+
+.xmas--css__leg-right .xmas--css__anim-part {
+	position: absolute;
+	left: 64px;
+	bottom: 9px;
+	transform: rotate(43deg);
+	z-index: 2;
+}
+
+.xmas--css__leg-right .xmas--css__anim-part .xmas--css__circle {
+	animation: leg-right .4s ease-out infinite alternate-reverse;
+	width: 20px;
+	height: 20px;
+	background-color: #91655d;
+	border-radius: 20px;
+	transform: translateX(4px) rotate(4deg);
+}
+
+.xmas--css__leg-right .xmas--css__anim-part .xmas--css__circle-last {
+	border-radius: 20px 0 0 20px;
+}
+
+.xmas--css__leg-right .xmas--css__anim-part .xmas--css__circle-last:before {
+	content: '';
+	display: block;
+	border-bottom: 20px solid #674a4a;
+	border-right: 2px solid transparent;
+	height: 0;
+	left: 15px;
+	width: 11px;
+	position: relative;
+	z-index: 1;
+}
+
+.xmas--css__presents {
+	top: 3px;
+	height: 45px;
+	margin: 0 auto;
+	position: relative;
+	width: 110px;
+}
+
+.xmas--css__presents:after {
+	animation: shadow .4s ease-out infinite alternate-reverse;
+	background-color: #e7eff7;
+	bottom: 0;
+	border-radius: 7px;
+	content: '';
+	display: block;
+	height: 7px;
+	left: -22px;
+	position: absolute;
+	width: 170px;
+}
+
+.xmas--css__present {
+	border-radius: 4px;
+	bottom: 3px;
+	position: absolute;
+	z-index: 1;
+}
+
+.xmas--css__present:before,
+.xmas--css__present:after {
+	content: '';
+	display: block;
+	position: relative;
+}
+
+.xmas--css__present:before {
+	border-radius: 4px 4px 2px 2px;
+	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+	right: 1px;
+}
+
+.xmas--css__present-one {
+	background-color: #fb5d5d;
+	height: 45px;
+	right: 32px;
+	width: 45px;
+	z-index: 2;
+}
+
+.xmas--css__present-one:before {
+	background-color: #fc7676;
+	height: 12px;
+	width: 47px;
+}
+
+.xmas--css__present-two {
+	background-color: #82dfe3;
+	height: 30px;
+	width: 30px;
+}
+
+.xmas--css__present-two:before {
+	background-color: #97e4e8;
+	height: 10px;
+	width: 32px;
+}
+
+.xmas--css__present-two:after {
+	background-color: #69b2cb;
+	bottom: 10px;
+	height: 100%;
+	left: 7px;
+	width: 5px;
+}
+
+.xmas--css__present-two-right {
+	right: 5px;
+}
+
+.xmas--css__present-three {
+	background-color: #ffb63c;
+	height: 25px;
+	left: 25px;
+	margin: auto;
+	width: 25px;
+	z-index: 2;
+}
+
+.xmas--css__present-three:before {
+	background-color: #ffc056;
+	height: 8px;
+	width: 27px;
+}
+
+.xmas--css__present-three:after {
+	background-color: #fb5353;
+	bottom: 8px;
+	height: 100%;
+	left: 13px;
+	width: 5px;
+}
+
+.xmas--css__snowflake {
+	background-color: #e4e4e4;
+	border-radius: 3px;
+	height: 3px;
+	position: absolute;
+	top: 0;
+	width: 3px;
+	z-index: 3;
+}
+
+.xmas--css__snowflake:nth-child(0) {
+	animation: snow-0 10s infinite;
+}
+
+@keyframes snow-0 {
+	from {
+		transform: translate(181px, -17px);
+	}
+
+	to {
+		transform: translate(181px, 517px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(1) {
+	animation: snow-1 10s infinite;
+}
+
+@keyframes snow-1 {
+	from {
+		transform: translate(23px, -175px);
+	}
+
+	to {
+		transform: translate(23px, 405px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(2) {
+	animation: snow-2 10s infinite;
+}
+
+@keyframes snow-2 {
+	from {
+		transform: translate(423px, -198px);
+	}
+
+	to {
+		transform: translate(423px, 583px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(3) {
+	animation: snow-3 12s infinite;
+}
+
+@keyframes snow-3 {
+	from {
+		transform: translate(37px, -143px);
+	}
+
+	to {
+		transform: translate(37px, 531px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(4) {
+	animation: snow-4 8s infinite;
+}
+
+@keyframes snow-4 {
+	from {
+		transform: translate(317px, -288px);
+	}
+
+	to {
+		transform: translate(317px, 431px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(5) {
+	animation: snow-5 14s infinite;
+}
+
+@keyframes snow-5 {
+	from {
+		transform: translate(170px, -145px);
+	}
+
+	to {
+		transform: translate(170px, 498px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(6) {
+	animation: snow-6 11s infinite;
+}
+
+@keyframes snow-6 {
+	from {
+		transform: translate(361px, -108px);
+	}
+
+	to {
+		transform: translate(361px, 494px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(7) {
+	animation: snow-7 8s infinite;
+}
+
+@keyframes snow-7 {
+	from {
+		transform: translate(167px, -214px);
+	}
+
+	to {
+		transform: translate(167px, 507px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(8) {
+	animation: snow-8 11s infinite;
+}
+
+@keyframes snow-8 {
+	from {
+		transform: translate(188px, -175px);
+	}
+
+	to {
+		transform: translate(188px, 542px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(9) {
+	animation: snow-9 15s infinite;
+}
+
+@keyframes snow-9 {
+	from {
+		transform: translate(167px, -226px);
+	}
+
+	to {
+		transform: translate(167px, 577px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(10) {
+	animation: snow-10 6s infinite;
+}
+
+@keyframes snow-10 {
+	from {
+		transform: translate(44px, -109px);
+	}
+
+	to {
+		transform: translate(44px, 542px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(11) {
+	animation: snow-11 15s infinite;
+}
+
+@keyframes snow-11 {
+	from {
+		transform: translate(150px, -256px);
+	}
+
+	to {
+		transform: translate(150px, 511px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(12) {
+	animation: snow-12 11s infinite;
+}
+
+@keyframes snow-12 {
+	from {
+		transform: translate(169px, -287px);
+	}
+
+	to {
+		transform: translate(169px, 458px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(13) {
+	animation: snow-13 10s infinite;
+}
+
+@keyframes snow-13 {
+	from {
+		transform: translate(155px, -271px);
+	}
+
+	to {
+		transform: translate(155px, 673px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(14) {
+	animation: snow-14 14s infinite;
+}
+
+@keyframes snow-14 {
+	from {
+		transform: translate(54px, -144px);
+	}
+
+	to {
+		transform: translate(54px, 594px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(15) {
+	animation: snow-15 6s infinite;
+}
+
+@keyframes snow-15 {
+	from {
+		transform: translate(431px, -245px);
+	}
+
+	to {
+		transform: translate(431px, 534px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(16) {
+	animation: snow-16 15s infinite;
+}
+
+@keyframes snow-16 {
+	from {
+		transform: translate(222px, -23px);
+	}
+
+	to {
+		transform: translate(222px, 550px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(17) {
+	animation: snow-17 11s infinite;
+}
+
+@keyframes snow-17 {
+	from {
+		transform: translate(62px, -294px);
+	}
+
+	to {
+		transform: translate(62px, 694px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(18) {
+	animation: snow-18 11s infinite;
+}
+
+@keyframes snow-18 {
+	from {
+		transform: translate(227px, -175px);
+	}
+
+	to {
+		transform: translate(227px, 445px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(19) {
+	animation: snow-19 15s infinite;
+}
+
+@keyframes snow-19 {
+	from {
+		transform: translate(425px, -4px);
+	}
+
+	to {
+		transform: translate(425px, 664px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(20) {
+	animation: snow-20 7s infinite;
+}
+
+@keyframes snow-20 {
+	from {
+		transform: translate(403px, -116px);
+	}
+
+	to {
+		transform: translate(403px, 465px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(21) {
+	animation: snow-21 8s infinite;
+}
+
+@keyframes snow-21 {
+	from {
+		transform: translate(201px, -130px);
+	}
+
+	to {
+		transform: translate(201px, 657px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(22) {
+	animation: snow-22 11s infinite;
+}
+
+@keyframes snow-22 {
+	from {
+		transform: translate(230px, -79px);
+	}
+
+	to {
+		transform: translate(230px, 418px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(23) {
+	animation: snow-23 11s infinite;
+}
+
+@keyframes snow-23 {
+	from {
+		transform: translate(111px, -161px);
+	}
+
+	to {
+		transform: translate(111px, 523px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(24) {
+	animation: snow-24 14s infinite;
+}
+
+@keyframes snow-24 {
+	from {
+		transform: translate(213px, -28px);
+	}
+
+	to {
+		transform: translate(213px, 577px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(25) {
+	animation: snow-25 13s infinite;
+}
+
+@keyframes snow-25 {
+	from {
+		transform: translate(256px, -195px);
+	}
+
+	to {
+		transform: translate(256px, 698px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(26) {
+	animation: snow-26 6s infinite;
+}
+
+@keyframes snow-26 {
+	from {
+		transform: translate(4px, -261px);
+	}
+
+	to {
+		transform: translate(4px, 604px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(27) {
+	animation: snow-27 12s infinite;
+}
+
+@keyframes snow-27 {
+	from {
+		transform: translate(26px, -198px);
+	}
+
+	to {
+		transform: translate(26px, 590px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(28) {
+	animation: snow-28 8s infinite;
+}
+
+@keyframes snow-28 {
+	from {
+		transform: translate(381px, -288px);
+	}
+
+	to {
+		transform: translate(381px, 419px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(29) {
+	animation: snow-29 13s infinite;
+}
+
+@keyframes snow-29 {
+	from {
+		transform: translate(222px, -127px);
+	}
+
+	to {
+		transform: translate(222px, 592px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(30) {
+	animation: snow-30 11s infinite;
+}
+
+@keyframes snow-30 {
+	from {
+		transform: translate(115px, -145px);
+	}
+
+	to {
+		transform: translate(115px, 615px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(31) {
+	animation: snow-31 7s infinite;
+}
+
+@keyframes snow-31 {
+	from {
+		transform: translate(342px, -219px);
+	}
+
+	to {
+		transform: translate(342px, 526px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(32) {
+	animation: snow-32 9s infinite;
+}
+
+@keyframes snow-32 {
+	from {
+		transform: translate(171px, -99px);
+	}
+
+	to {
+		transform: translate(171px, 540px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(33) {
+	animation: snow-33 15s infinite;
+}
+
+@keyframes snow-33 {
+	from {
+		transform: translate(411px, -17px);
+	}
+
+	to {
+		transform: translate(411px, 688px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(34) {
+	animation: snow-34 15s infinite;
+}
+
+@keyframes snow-34 {
+	from {
+		transform: translate(384px, -79px);
+	}
+
+	to {
+		transform: translate(384px, 656px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(35) {
+	animation: snow-35 10s infinite;
+}
+
+@keyframes snow-35 {
+	from {
+		transform: translate(285px, -275px);
+	}
+
+	to {
+		transform: translate(285px, 637px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(36) {
+	animation: snow-36 6s infinite;
+}
+
+@keyframes snow-36 {
+	from {
+		transform: translate(324px, -163px);
+	}
+
+	to {
+		transform: translate(324px, 423px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(37) {
+	animation: snow-37 11s infinite;
+}
+
+@keyframes snow-37 {
+	from {
+		transform: translate(436px, -183px);
+	}
+
+	to {
+		transform: translate(436px, 611px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(38) {
+	animation: snow-38 9s infinite;
+}
+
+@keyframes snow-38 {
+	from {
+		transform: translate(274px, -255px);
+	}
+
+	to {
+		transform: translate(274px, 484px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(39) {
+	animation: snow-39 12s infinite;
+}
+
+@keyframes snow-39 {
+	from {
+		transform: translate(398px, -280px);
+	}
+
+	to {
+		transform: translate(398px, 656px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(40) {
+	animation: snow-40 10s infinite;
+}
+
+@keyframes snow-40 {
+	from {
+		transform: translate(129px, -77px);
+	}
+
+	to {
+		transform: translate(129px, 568px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(41) {
+	animation: snow-41 15s infinite;
+}
+
+@keyframes snow-41 {
+	from {
+		transform: translate(135px, -22px);
+	}
+
+	to {
+		transform: translate(135px, 630px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(42) {
+	animation: snow-42 11s infinite;
+}
+
+@keyframes snow-42 {
+	from {
+		transform: translate(68px, -117px);
+	}
+
+	to {
+		transform: translate(68px, 611px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(43) {
+	animation: snow-43 9s infinite;
+}
+
+@keyframes snow-43 {
+	from {
+		transform: translate(250px, -104px);
+	}
+
+	to {
+		transform: translate(250px, 464px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(44) {
+	animation: snow-44 8s infinite;
+}
+
+@keyframes snow-44 {
+	from {
+		transform: translate(191px, -272px);
+	}
+
+	to {
+		transform: translate(191px, 529px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(45) {
+	animation: snow-45 10s infinite;
+}
+
+@keyframes snow-45 {
+	from {
+		transform: translate(379px, -112px);
+	}
+
+	to {
+		transform: translate(379px, 678px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(46) {
+	animation: snow-46 8s infinite;
+}
+
+@keyframes snow-46 {
+	from {
+		transform: translate(388px, -234px);
+	}
+
+	to {
+		transform: translate(388px, 533px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(47) {
+	animation: snow-47 11s infinite;
+}
+
+@keyframes snow-47 {
+	from {
+		transform: translate(188px, -164px);
+	}
+
+	to {
+		transform: translate(188px, 409px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(48) {
+	animation: snow-48 6s infinite;
+}
+
+@keyframes snow-48 {
+	from {
+		transform: translate(20px, -11px);
+	}
+
+	to {
+		transform: translate(20px, 557px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(49) {
+	animation: snow-49 10s infinite;
+}
+
+@keyframes snow-49 {
+	from {
+		transform: translate(386px, -116px);
+	}
+
+	to {
+		transform: translate(386px, 640px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(50) {
+	animation: snow-50 10s infinite;
+}
+
+@keyframes snow-50 {
+	from {
+		transform: translate(198px, -70px);
+	}
+
+	to {
+		transform: translate(198px, 409px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(51) {
+	animation: snow-51 9s infinite;
+}
+
+@keyframes snow-51 {
+	from {
+		transform: translate(276px, -127px);
+	}
+
+	to {
+		transform: translate(276px, 629px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(52) {
+	animation: snow-52 15s infinite;
+}
+
+@keyframes snow-52 {
+	from {
+		transform: translate(168px, -31px);
+	}
+
+	to {
+		transform: translate(168px, 413px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(53) {
+	animation: snow-53 12s infinite;
+}
+
+@keyframes snow-53 {
+	from {
+		transform: translate(18px, -24px);
+	}
+
+	to {
+		transform: translate(18px, 598px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(54) {
+	animation: snow-54 11s infinite;
+}
+
+@keyframes snow-54 {
+	from {
+		transform: translate(352px, -18px);
+	}
+
+	to {
+		transform: translate(352px, 424px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(55) {
+	animation: snow-55 7s infinite;
+}
+
+@keyframes snow-55 {
+	from {
+		transform: translate(281px, -30px);
+	}
+
+	to {
+		transform: translate(281px, 698px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(56) {
+	animation: snow-56 14s infinite;
+}
+
+@keyframes snow-56 {
+	from {
+		transform: translate(446px, -98px);
+	}
+
+	to {
+		transform: translate(446px, 641px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(57) {
+	animation: snow-57 12s infinite;
+}
+
+@keyframes snow-57 {
+	from {
+		transform: translate(356px, -254px);
+	}
+
+	to {
+		transform: translate(356px, 487px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(58) {
+	animation: snow-58 6s infinite;
+}
+
+@keyframes snow-58 {
+	from {
+		transform: translate(362px, -29px);
+	}
+
+	to {
+		transform: translate(362px, 421px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(59) {
+	animation: snow-59 9s infinite;
+}
+
+@keyframes snow-59 {
+	from {
+		transform: translate(8px, -248px);
+	}
+
+	to {
+		transform: translate(8px, 433px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(60) {
+	animation: snow-60 15s infinite;
+}
+
+@keyframes snow-60 {
+	from {
+		transform: translate(176px, -203px);
+	}
+
+	to {
+		transform: translate(176px, 443px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(61) {
+	animation: snow-61 10s infinite;
+}
+
+@keyframes snow-61 {
+	from {
+		transform: translate(194px, -22px);
+	}
+
+	to {
+		transform: translate(194px, 536px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(62) {
+	animation: snow-62 10s infinite;
+}
+
+@keyframes snow-62 {
+	from {
+		transform: translate(182px, -200px);
+	}
+
+	to {
+		transform: translate(182px, 634px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(63) {
+	animation: snow-63 13s infinite;
+}
+
+@keyframes snow-63 {
+	from {
+		transform: translate(138px, -96px);
+	}
+
+	to {
+		transform: translate(138px, 612px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(64) {
+	animation: snow-64 13s infinite;
+}
+
+@keyframes snow-64 {
+	from {
+		transform: translate(295px, -162px);
+	}
+
+	to {
+		transform: translate(295px, 498px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(65) {
+	animation: snow-65 9s infinite;
+}
+
+@keyframes snow-65 {
+	from {
+		transform: translate(332px, -54px);
+	}
+
+	to {
+		transform: translate(332px, 604px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(66) {
+	animation: snow-66 7s infinite;
+}
+
+@keyframes snow-66 {
+	from {
+		transform: translate(99px, -294px);
+	}
+
+	to {
+		transform: translate(99px, 522px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(67) {
+	animation: snow-67 12s infinite;
+}
+
+@keyframes snow-67 {
+	from {
+		transform: translate(21px, -245px);
+	}
+
+	to {
+		transform: translate(21px, 453px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(68) {
+	animation: snow-68 9s infinite;
+}
+
+@keyframes snow-68 {
+	from {
+		transform: translate(237px, -127px);
+	}
+
+	to {
+		transform: translate(237px, 625px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(69) {
+	animation: snow-69 8s infinite;
+}
+
+@keyframes snow-69 {
+	from {
+		transform: translate(14px, -128px);
+	}
+
+	to {
+		transform: translate(14px, 643px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(70) {
+	animation: snow-70 14s infinite;
+}
+
+@keyframes snow-70 {
+	from {
+		transform: translate(251px, -126px);
+	}
+
+	to {
+		transform: translate(251px, 554px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(71) {
+	animation: snow-71 12s infinite;
+}
+
+@keyframes snow-71 {
+	from {
+		transform: translate(6px, -258px);
+	}
+
+	to {
+		transform: translate(6px, 697px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(72) {
+	animation: snow-72 10s infinite;
+}
+
+@keyframes snow-72 {
+	from {
+		transform: translate(135px, -97px);
+	}
+
+	to {
+		transform: translate(135px, 486px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(73) {
+	animation: snow-73 12s infinite;
+}
+
+@keyframes snow-73 {
+	from {
+		transform: translate(422px, -157px);
+	}
+
+	to {
+		transform: translate(422px, 586px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(74) {
+	animation: snow-74 15s infinite;
+}
+
+@keyframes snow-74 {
+	from {
+		transform: translate(201px, -247px);
+	}
+
+	to {
+		transform: translate(201px, 550px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(75) {
+	animation: snow-75 11s infinite;
+}
+
+@keyframes snow-75 {
+	from {
+		transform: translate(112px, -288px);
+	}
+
+	to {
+		transform: translate(112px, 574px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(76) {
+	animation: snow-76 11s infinite;
+}
+
+@keyframes snow-76 {
+	from {
+		transform: translate(225px, -141px);
+	}
+
+	to {
+		transform: translate(225px, 538px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(77) {
+	animation: snow-77 14s infinite;
+}
+
+@keyframes snow-77 {
+	from {
+		transform: translate(410px, -242px);
+	}
+
+	to {
+		transform: translate(410px, 550px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(78) {
+	animation: snow-78 6s infinite;
+}
+
+@keyframes snow-78 {
+	from {
+		transform: translate(194px, -189px);
+	}
+
+	to {
+		transform: translate(194px, 629px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(79) {
+	animation: snow-79 11s infinite;
+}
+
+@keyframes snow-79 {
+	from {
+		transform: translate(279px, -236px);
+	}
+
+	to {
+		transform: translate(279px, 579px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(80) {
+	animation: snow-80 7s infinite;
+}
+
+@keyframes snow-80 {
+	from {
+		transform: translate(80px, -87px);
+	}
+
+	to {
+		transform: translate(80px, 652px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(81) {
+	animation: snow-81 15s infinite;
+}
+
+@keyframes snow-81 {
+	from {
+		transform: translate(3px, -37px);
+	}
+
+	to {
+		transform: translate(3px, 629px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(82) {
+	animation: snow-82 12s infinite;
+}
+
+@keyframes snow-82 {
+	from {
+		transform: translate(306px, -263px);
+	}
+
+	to {
+		transform: translate(306px, 649px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(83) {
+	animation: snow-83 15s infinite;
+}
+
+@keyframes snow-83 {
+	from {
+		transform: translate(212px, -273px);
+	}
+
+	to {
+		transform: translate(212px, 477px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(84) {
+	animation: snow-84 12s infinite;
+}
+
+@keyframes snow-84 {
+	from {
+		transform: translate(224px, -280px);
+	}
+
+	to {
+		transform: translate(224px, 591px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(85) {
+	animation: snow-85 7s infinite;
+}
+
+@keyframes snow-85 {
+	from {
+		transform: translate(253px, -23px);
+	}
+
+	to {
+		transform: translate(253px, 441px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(86) {
+	animation: snow-86 10s infinite;
+}
+
+@keyframes snow-86 {
+	from {
+		transform: translate(374px, -118px);
+	}
+
+	to {
+		transform: translate(374px, 521px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(87) {
+	animation: snow-87 10s infinite;
+}
+
+@keyframes snow-87 {
+	from {
+		transform: translate(234px, -74px);
+	}
+
+	to {
+		transform: translate(234px, 584px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(88) {
+	animation: snow-88 10s infinite;
+}
+
+@keyframes snow-88 {
+	from {
+		transform: translate(331px, -73px);
+	}
+
+	to {
+		transform: translate(331px, 432px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(89) {
+	animation: snow-89 6s infinite;
+}
+
+@keyframes snow-89 {
+	from {
+		transform: translate(26px, -228px);
+	}
+
+	to {
+		transform: translate(26px, 523px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(90) {
+	animation: snow-90 8s infinite;
+}
+
+@keyframes snow-90 {
+	from {
+		transform: translate(124px, -145px);
+	}
+
+	to {
+		transform: translate(124px, 632px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(91) {
+	animation: snow-91 11s infinite;
+}
+
+@keyframes snow-91 {
+	from {
+		transform: translate(109px, -158px);
+	}
+
+	to {
+		transform: translate(109px, 487px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(92) {
+	animation: snow-92 14s infinite;
+}
+
+@keyframes snow-92 {
+	from {
+		transform: translate(80px, -161px);
+	}
+
+	to {
+		transform: translate(80px, 671px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(93) {
+	animation: snow-93 15s infinite;
+}
+
+@keyframes snow-93 {
+	from {
+		transform: translate(247px, -226px);
+	}
+
+	to {
+		transform: translate(247px, 626px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(94) {
+	animation: snow-94 13s infinite;
+}
+
+@keyframes snow-94 {
+	from {
+		transform: translate(197px, -247px);
+	}
+
+	to {
+		transform: translate(197px, 561px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(95) {
+	animation: snow-95 6s infinite;
+}
+
+@keyframes snow-95 {
+	from {
+		transform: translate(330px, -241px);
+	}
+
+	to {
+		transform: translate(330px, 532px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(96) {
+	animation: snow-96 12s infinite;
+}
+
+@keyframes snow-96 {
+	from {
+		transform: translate(143px, -39px);
+	}
+
+	to {
+		transform: translate(143px, 630px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(97) {
+	animation: snow-97 13s infinite;
+}
+
+@keyframes snow-97 {
+	from {
+		transform: translate(293px, -264px);
+	}
+
+	to {
+		transform: translate(293px, 403px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(98) {
+	animation: snow-98 15s infinite;
+}
+
+@keyframes snow-98 {
+	from {
+		transform: translate(127px, -175px);
+	}
+
+	to {
+		transform: translate(127px, 625px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(99) {
+	animation: snow-99 6s infinite;
+}
+
+@keyframes snow-99 {
+	from {
+		transform: translate(32px, -58px);
+	}
+
+	to {
+		transform: translate(32px, 646px);
+	}
+}
+
+.xmas--css__snowflake:nth-child(100) {
+	animation: snow-100 14s infinite;
+}
+
+@keyframes snow-100 {
+	from {
+		transform: translate(340px, -44px);
+	}
+
+	to {
+		transform: translate(340px, 415px);
+	}
+}
+
+@keyframes tail {
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20% {
+		transform: rotate(-5deg);
+	}
+}
+
+@keyframes shadow {
+	to {
+		width: 185px;
+	}
+}
+
+@keyframes eyes {
+	50% {
+		transform: translate(3px, 2px);
+	}
+
+	60% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes eaves {
+	50% {
+		transform: translateY(0);
+	}
+
+	60% {
+		transform: translateY(-1px);
+	}
+
+	100% {
+		transform: translateY(-1px);
+	}
+}
+
+@keyframes hoof-one {
+	to {
+		transform: translateX(2px) rotate(5deg);
+	}
+}
+
+@keyframes jump {
+	to {
+		transform: translateY(-2px) rotate(25deg);
+	}
+}
+
+@keyframes jump-two {
+	to {
+		transform: translateY(2px);
+	}
+}
+
+@keyframes rocking {
+	to {
+		transform: rotate(-1deg);
+	}
+}
+
+@keyframes ear-left {
+	85% {
+		transform: rotate(30deg);
+	}
+
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+
+@keyframes ear-right {
+	85% {
+		transform: rotate(160deg);
+	}
+
+	100% {
+		transform: rotate(170deg);
+	}
+}
+
+@keyframes leg-right {
+	to {
+		transform: translateX(4px) rotate(2deg);
+	}
+}
+
+@keyframes leg-left {
+	0% {
+		transform: rotate(0deg) translateX(0px);
+	}
+
+	50% {
+		transform: rotate(5deg) translateX(3px);
+	}
+}
+
+.xmas--css__title {
+	text-align: center;
+}
+
+.xmas--css__title h1 {
+	font-size: 1.5em;
+	margin: 100px 0 10px 0;
+}
+
+
+.christmas--css__special2-container {
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px #dee2e6;
+	height: 300px;
+	margin: 40px auto 50px auto;
+	position: relative;
+	width: 450px;
+}
+
+.xmas--css__artboard {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+@keyframes link {
+	25% {
+		transform: rotate(10deg);
+	}
+
+	50% {
+		transform: rotate(-10deg);
+	}
+}
+
+.xmas--css__message h2 {
+	font-style: normal;
+	font-size: 48px;
+	margin-bottom: 0;
+	white-space: nowrap;
+	font-family: 'Mountains of Christmas';
+}

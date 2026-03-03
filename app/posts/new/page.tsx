@@ -1,9 +1,10 @@
 'use client'
 
+import { Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import PostEditor from '@/components/posts/PostEditor'
 
-export default function NewPostPage() {
+function NewPostPageContent() {
   const params = useSearchParams()
 
   const title = params.get('title') || ''
@@ -21,5 +22,13 @@ export default function NewPostPage() {
       initialMetaDescription={metaDescription}
       originalUrl={originalUrl}
     />
+  )
+}
+
+export default function NewPostPage() {
+  return (
+    <Suspense fallback={<div className="text-slate-400">Yükleniyor...</div>}>
+      <NewPostPageContent />
+    </Suspense>
   )
 }

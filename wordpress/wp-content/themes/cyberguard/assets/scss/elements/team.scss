@@ -1,0 +1,115 @@
+/*--------------------------------------------------------------
+# Team Grid/Carousel
+--------------------------------------------------------------*/
+.pxl-team-carousel1 {
+	.pxl-item--holder {
+		&:before {
+			display: none;
+		}
+	}
+	.pxl-holder--inner {
+		background-color: unset !important;
+	}
+}
+
+//.pxl-team-carousel
+.pxl-team-carousel1 {
+	.pxl-swiper-slide {
+		padding: 0;
+	}
+	.pxl-swiper-container {
+		margin: 0;
+	}
+	.pxl-item--inner {
+		text-align: center;
+		@include transition(all 0.4s ease-in-out);
+		
+		.pxl-item--image {
+			height: 400px;
+			overflow: hidden;
+			position: relative;
+			background-color: $primary_color;
+			border-bottom: 2px solid $link_color;
+			@include transition(all 0.4s ease-in-out);
+			&:before {
+				content: '';
+				position: absolute;
+				height: 70px;
+				width: 100%;
+				top: 0;
+				left: 0;
+				background-color: #fff;
+				z-index: 0;
+			}
+			img {
+				height: 100%;
+  				width: auto;
+  				@include transition(all 120ms linear 0ms);
+  				mix-blend-mode: luminosity;
+  				z-index: 2;
+  				position: relative;
+  				&:hover {
+  					mix-blend-mode: normal;
+  				}
+			}
+		}
+		.pxl-item--holder {
+			padding-top: 25px;
+			.pxl-item--title {
+				font-size: 24px;
+				font-weight: 600;
+				line-height: 1.2;
+				margin-bottom: 2px;
+				a {
+					color: $link_color;
+				}
+			}
+			.pxl-item--position {
+				font-size: 15px;
+				color: #777;
+			}
+		}
+	}
+}
+
+//pxl-team-box
+
+
+//pxl-team-grid
+.pxl-team-grid1 {
+	.pxl-item--inner {
+		@include border-radius(10px);
+		overflow: hidden;
+		background-color: #f3f3f4;
+		text-align: center;
+		.pxl-item-content {
+			padding: 1.5rem;
+			.pxl-item--title {
+				margin-bottom: 0;
+			}
+			.pxl-item--position {
+				margin-bottom: 0.5rem;
+			}
+			.pxl-social--icon {
+				display: inline-flex;
+				align-items: center;
+				gap: 6px;
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 36px;
+					height: 36px;
+					@include border-radius(6px);
+					background-color: #fff;
+					color: $primary_color;
+					font-size: 16px;
+					&:hover {
+						background-color: $primary_color;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

@@ -23,7 +23,7 @@ function extractTextFromGeminiResponse(json: unknown): string {
   return text.trim()
 }
 
-async function callGeminiGenerateContent({
+export async function callGeminiGenerateContent({
   apiKey,
   model,
   prompt,

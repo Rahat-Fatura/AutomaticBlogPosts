@@ -7,6 +7,13 @@ import type { WPPost } from '@/lib/types'
 import ConfirmModal from '@/components/ui/ConfirmModal'
 import { useToast } from '@/components/ui/Toast'
 
+function decodeHtml(html: string): string {
+  if (typeof window === 'undefined') return html
+  const txt = document.createElement('textarea')
+  txt.innerHTML = html
+  return txt.value
+}
+
 export default function PostList() {
   const router = useRouter()
   const toast = useToast()
@@ -147,7 +154,7 @@ export default function PostList() {
               className="grid grid-cols-12 items-center gap-2 border-b border-gray-200 px-4 py-3 text-sm last:border-b-0 hover:bg-gray-50"
             >
               <div className="col-span-6 min-w-0">
-                <div className="truncate font-medium text-gray-900">{p.title?.rendered || '(Başlıksız)'}</div>
+                <div className="truncate font-medium text-gray-900">{decodeHtml(p.title?.rendered || '(Başlıksız)')}</div>
                 <div className="truncate text-xs text-gray-600">/{p.slug}</div>
               </div>
               <div className="col-span-2">

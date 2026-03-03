@@ -70,16 +70,32 @@ model Announcement {
 }
 
 model Draft {
-  id             String      @id @default(uuid()) @db.Uuid
-  announcementId String      @unique @db.Uuid
-  title          String
-  content        String
-  metaDescription String?
-  status         DraftStatus @default(pending)
-  createdAt      DateTime    @default(now())
-  publishedAt    DateTime?
+  id                 String      @id @default(uuid()) @db.Uuid
+  announcementId     String      @unique @db.Uuid
+  title              String
+  content            String
+  metaDescription    String?
+  status             DraftStatus @default(pending)
+  aiGenerationFailed Boolean     @default(false)
+  approvalToken      String?     @unique
+  tokenExpiresAt     DateTime?
+  createdAt          DateTime    @default(now())
+  publishedAt        DateTime?
 
-  announcement   Announcement @relation(fields: [announcementId], references: [id], onDelete: Cascade)
+  announcement       Announcement @relation(fields: [announcementId], references: [id], onDelete: Cascade)
 
   @@index([status])
+  @@index([approvalToken])
+}
+
+model EmailRecipient {
+  id        String   @id @default(uuid()) @db.Uuid
+  name      String
+  email     String   @unique
+  role      String?
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([isActive])
 }

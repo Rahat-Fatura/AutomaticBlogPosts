@@ -1,0 +1,190 @@
+.pxl-counter {
+	.pxl--counter-number {
+		display: inline-flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+}
+.pxl-counterslide {
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-flex;
+	vertical-align: middle;
+	*vertical-align: auto;
+	position: relative;
+	.pxl-counterslide-inside {
+	  display: inline-flex;
+	}
+	.pxl-counterslide-digit-spacer {
+		visibility: hidden;
+	}
+	.pxl-counterslide-digit, .pxl-counterslide-digit-spacer {
+		display: -moz-inline-box;
+		-moz-box-orient: vertical;
+		display: inline-flex;
+		vertical-align: middle;
+		*vertical-align: auto;
+		position: relative;
+	}
+	.pxl-counterslide-digit-inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
+	}
+	.pxl-counterslide-ribbon {
+		display: block;
+	}
+	.pxl-counterslide-ribbon-inner {
+		display: block;
+		-webkit-backface-visibility: hidden;
+	}
+	.pxl-counterslide-value {
+		display: block;
+  		-webkit-transform: translateZ(0);
+	}
+	.pxl-counterslide-value.pxl-counterslide-last-value {
+		position: absolute;
+	}
+	&.pxl-counterslide-animating-up .pxl-counterslide-ribbon-inner {
+		-webkit-transition: -webkit-transform 2s;
+		-moz-transition: -moz-transform 2s;
+		-ms-transition: -ms-transform 2s;
+		-o-transition: -o-transform 2s;
+		transition: transform 2s;
+	}
+	&.pxl-counterslide-animating-up.pxl-counterslide-animating .pxl-counterslide-ribbon-inner {
+		-webkit-transform: translateY(-100%);
+		-moz-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-o-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+	&.pxl-counterslide-animating-down .pxl-counterslide-ribbon-inner {
+		-webkit-transform: translateY(-100%);
+		-moz-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-o-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+	&.pxl-counterslide-animating-down.pxl-counterslide-animating .pxl-counterslide-ribbon-inner {
+		-webkit-transition: -webkit-transform 2s;
+		-moz-transition: -moz-transform 2s;
+		-ms-transition: -ms-transform 2s;
+		-o-transition: -o-transform 2s;
+		transition: transform 2s;
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+.pxl-counter1 {
+	&.default {
+		.pxl--item-inner {
+			text-align: center;
+			background-color: #fff;
+			border-radius: 10px;
+			padding: 1.5rem;
+			.pxl--counter-number {
+				font-size: 72px;
+				color: $link_color;
+				display: inline-flex;
+				align-items: center;
+				line-height: 1.15;
+				font-weight: 600;
+				letter-spacing: -0.02em;
+				@extend .ft-heading;
+			}
+			.pxl--item-title {
+				color: $link_color;
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+.pxl-counter2 {
+	&.default {
+		.pxl--item-inner {
+			text-align: center;
+			.pxl-section-icon {
+				margin-bottom: 7px;
+			}
+			.pxl-item--icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 72px;
+				height: 72px;
+				@include border-radius(50%);
+				color: #fff;
+				font-size: 40px;
+				background: linear-gradient(45deg, $gradient_color_from, $gradient_color_to);
+			}
+			.pxl--counter-number {
+				font-size: 40px;
+				color: $link_color;
+				display: inline-flex;
+				align-items: center;
+				line-height: 1.1;
+				font-weight: 600;
+				letter-spacing: 0;
+				@extend .ft-heading;
+				margin-bottom: 5px;
+			}
+			.pxl--item-title {
+				line-height: 1.3;
+			}
+		}
+	}
+}
+
+.pxl-counter3 {
+	&.default {
+		.pxl--item-inner {
+			display: inline-flex;
+			gap: 1rem;
+			flex-wrap: wrap;
+			box-shadow: 0 10px 30px rgb(29, 29, 31, 25%);
+			background: rgba(0, 0, 0, .15);
+			-webkit-backdrop-filter: blur(10px);
+			-o-backdrop-filter: blur(10px);
+			-moz-backdrop-filter: blur(10px);
+			backdrop-filter: blur(10px);
+			border-radius: 10px;
+			padding: 1.5rem;
+			.pxl-section-icon {
+				margin-bottom: 7px;
+			}
+			.pxl-item--icon {
+				color: $primary_color;
+				font-size: 60px;
+				line-height: 1;
+			}
+			.pxl--counter-number {
+				font-size: 48px;
+				color: #fff;
+				display: inline-flex;
+				align-items: center;
+				line-height: 1.2;
+				font-weight: 600;
+				letter-spacing: -0.015em;
+				@extend .ft-heading;
+				margin-bottom: 5px;
+			}
+			.pxl--item-title {
+				line-height: 1.3;
+				color: #f8f9fa;
+			}
+		}
+	}
+}
+
+body.rtl {
+	
+}

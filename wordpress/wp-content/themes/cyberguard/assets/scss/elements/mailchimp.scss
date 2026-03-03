@@ -1,0 +1,108 @@
+.mc4wp-alert {
+	margin-top: 14px;
+	font-size: 16px;
+	line-height: 1.625;
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+.pxl-mailchimp-l1 {
+    .mc4wp-form-fields {
+        position: relative;
+    }
+}
+
+//pxl-mailchimp-from
+.pxl-mailchimp-from1 {
+    .style-default {
+        input {
+            @include border-radius(0);
+            background-color: unset;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            color: #999;
+            border: 1px solid #999;
+            padding: 0 30px;
+            z-index: 1;
+            position: relative;
+            height: 55px;
+            &:focus {
+                color: $link_color;
+                background-color: unset !important;
+                border-color: $link_color;
+            }
+        }
+        .pxl-mailchimp {
+            position: relative;
+            display: flex;
+            align-content: center;
+            flex-direction: row;
+            gap: 21px;
+            @media (max-width: 575px) {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .mailchimp-submit {
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+        }
+        .btn {
+            padding: 1px 86px 0 86px;
+            @media (max-width: 1200px) {
+                padding: 1px 40px 0 40px;
+            }
+        }
+    }
+    .style2 {
+        input {
+            @include border-radius(0);
+            background-color: unset;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            color: #999;
+            border: 1px solid #333;
+            padding: 0 30px;
+            z-index: 1;
+            position: relative;
+            height: 55px;
+            &:focus {
+                color: #fff;
+                background-color: unset !important;
+                border-color: #fff;
+            }
+        }
+        .pxl-mailchimp {
+            position: relative;
+            display: flex;
+            align-content: center;
+            flex-direction: row;
+            gap: 10px;
+            @media (max-width: 575px) {
+                flex-direction: column;
+            }
+            .mailchimp-submit {
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+        }
+        .btn {
+            padding: 1px 40px 0 40px;
+            background-color: #fff;
+            color: $link_color;
+            svg {
+            	path {
+            		stroke: $link_color;
+            	}
+            }
+        }
+    }
+}
+
+body.rtl {
+	
+}

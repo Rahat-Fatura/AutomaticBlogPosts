@@ -1,0 +1,76 @@
+.pxl-accordion {
+    .pxl-accordion--title {
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+    .pxl-accordion--content {
+        display: none;
+    }
+    .pxl-icon--plus {
+        font-style: normal;
+    }
+}
+
+.pxl-accordion1 {
+    &.style-default {
+        .pxl-accordion--title {
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 600;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            color: #35404e;
+            @include transition(all 0.3s ease-in-out);
+            line-height: 1.9;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: solid 1px #dddddd;
+            .pxl-title--text {
+                flex-grow: 1;
+                max-width: 93%;
+            }
+        }
+        .pxl-icon--action {
+            position: relative;
+            @include transition(all 0.3s ease-in-out);
+            svg {
+                height: 6px;
+                width: auto;
+                @include transition(all 0.3s ease-in-out);
+                path {
+                    stroke: #000a5b;
+                }
+            }
+        }
+        .pxl-item-content {
+            width: 100%;
+            @include transition(all 0.3s ease-in-out);
+            &.active {
+                .pxl-accordion--title {
+                    .pxl-icon--action {
+                        svg {
+                            transform: rotateX(180deg);
+                        }
+                    }
+                }
+            }
+        }
+        .pxl-accordion--content {
+            padding-top: 15px;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .pxl--item {
+            position: relative;
+            @include transition(all 0.3s ease-in-out);
+            &:last-child {
+                
+            }
+        }
+    }
+}
+
+body.rtl {
+    
+}

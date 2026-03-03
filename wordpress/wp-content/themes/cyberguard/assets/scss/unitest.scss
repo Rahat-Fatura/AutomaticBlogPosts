@@ -1,0 +1,24 @@
+//memu-unitest
+.widget_block {
+	.wp-block-search__label {
+		
+	}
+}
+
+.wp-block-search {
+	.wp-block-search__button {
+		padding: 0 20px;
+	}
+}
+
+//* pxl-item--archive */
+.pxl-item--archive {
+	&.pxl-item--standard {
+		.pxl-item--title {
+			a {
+				word-break: break-word;
+				-webkit-box-orient: vertical;
+			}
+		}
+	}
+}

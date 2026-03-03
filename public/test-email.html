@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Email Test</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background: #2563eb;
+        }
+        button:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            display: none;
+        }
+        .success {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #10b981;
+        }
+        .error {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #ef4444;
+        }
+        .loading {
+            background: #dbeafe;
+            color: #1e40af;
+            border: 1px solid #3b82f6;
+        }
+    </style>
+</head>
+<body>
+    <h1>📧 Email Test Panel</h1>
+    
+    <div>
+        <h2>Test Email Gönder</h2>
+        <p>Aktif email alıcılarına test email gönderir.</p>
+        <button onclick="sendTestEmail()">Test Email Gönder</button>
+    </div>
+
+    <div>
+        <h2>Email Alıcıları</h2>
+        <button onclick="getRecipients()">Alıcıları Listele</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+        async function sendTestEmail() {
+            const btn = event.target;
+            const result = document.getElementById('result');
+            
+            btn.disabled = true;
+            result.className = 'loading';
+            result.style.display = 'block';
+            result.innerHTML = '⏳ Email gönderiliyor...';
+
+            try {
+                const response = await fetch('/api/email-recipients/test', {
+                    method: 'POST'
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    result.className = 'success';
+                    result.innerHTML = `
+                        <strong>✅ Başarılı!</strong><br>
+                        ${data.message}<br>
+                        Alıcılar: ${data.recipients.join(', ')}
+                    `;
+                } else {
+                    result.className = 'error';
+                    result.innerHTML = `<strong>❌ Hata:</strong> ${data.error}`;
+                }
+            } catch (error) {
+                result.className = 'error';
+                result.innerHTML = `<strong>❌ Hata:</strong> ${error.message}`;
+            } finally {
+                btn.disabled = false;
+            }
+        }
+
+        async function getRecipients() {
+            const btn = event.target;
+            const result = document.getElementById('result');
+            
+            btn.disabled = true;
+            result.className = 'loading';
+            result.style.display = 'block';
+            result.innerHTML = '⏳ Alıcılar yükleniyor...';
+
+            try {
+                const response = await fetch('/api/email-recipients');
+                const data = await response.json();
+                
+                if (response.ok) {
+                    result.className = 'success';
+                    result.innerHTML = `
+                        <strong>📋 Email Alıcıları (${data.length})</strong><br><br>
+                        ${data.map(r => `
+                            <div style="margin: 10px 0; padding: 10px; background: white; border-radius: 4px;">
+                                <strong>${r.name}</strong><br>
+                                📧 ${r.email}<br>
+                                ${r.isActive ? '✅ Aktif' : '❌ Pasif'}
+                            </div>
+                        `).join('')}
+                    `;
+                } else {
+                    result.className = 'error';
+                    result.innerHTML = `<strong>❌ Hata:</strong> ${data.error}`;
+                }
+            } catch (error) {
+                result.className = 'error';
+                result.innerHTML = `<strong>❌ Hata:</strong> ${error.message}`;
+            } finally {
+                btn.disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>

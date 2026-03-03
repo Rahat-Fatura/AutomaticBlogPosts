@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { Suspense, useEffect, useMemo, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
@@ -8,7 +8,7 @@ import Link from '@tiptap/extension-link'
 import Image from '@tiptap/extension-image'
 import { useToast } from '@/components/ui/Toast'
 
-export default function NewDraftPage() {
+function NewDraftPageContent() {
   const toast = useToast()
   const router = useRouter()
   const params = useSearchParams()
@@ -100,8 +100,8 @@ export default function NewDraftPage() {
   }, [draftId, editor, toast])
 
   const canSave = useMemo(() => {
-    return !!title.trim() && !!(editor?.getText() || '').trim() && !!originalUrl && !saving && !loading
-  }, [title, editor, originalUrl, saving, loading])
+    return !!title.trim() && !!(editor?.getText() || '').trim() && !saving && !loading
+  }, [title, editor, saving, loading])
 
   async function saveToDb(status: 'pending' | 'published') {
     setSaving(true)
@@ -232,5 +232,13 @@ export default function NewDraftPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function NewDraftPage() {
+  return (
+    <Suspense fallback={<div className="text-slate-400">Yükleniyor...</div>}>
+      <NewDraftPageContent />
+    </Suspense>
   )
 }

@@ -1,0 +1,2648 @@
+/*  
+
+	Author : Amedea
+	Author URI : https://amedeapro.com
+	Author : Moskva Yigit
+	Author URI : http://moskvayigit.com
+	Version : 0.0.3.9
+
+	Table of Contents
+	- Halloween Special
+	 
+*/
+
+.ki-description{width:100%;}
+
+/*----------------------------
+	.-- Halloween Special
+-----------------------------*/
+
+*, *:before, *:after {
+	 box-sizing: inherit;
+}
+
+.halloween--css * {
+	 position: absolute;
+}
+
+.halloween--css *:before, .halloween--css *:after {
+	 content: "";
+	 position: absolute;
+}
+
+.halloween--css {
+	 background: #500d78;
+	 overflow: hidden;
+	 width:100%;
+	 height:100vh;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+
+.halloween--css__container {
+	 width: 820px;
+	 height: 620px;
+	 overflow: hidden;
+}
+ .halloween--css__shelf-one, .halloween--css__shelf-two, .halloween--css__shelf-three {
+	 width: 220px;
+	 height: 20px;
+	 top: 220px;
+	 right: 50px;
+	 z-index: 3;
+}
+ .halloween--css__shelf-one .halloween--css__shelf:after {
+	 width: 30%;
+	 height: 100%;
+	 background-color: #8f65a9;
+	 border-radius: 0px 50px 0 0;
+	 bottom: 0;
+	 opacity: 0.1;
+	 z-index: 3;
+}
+ .halloween--css__shelf-one .halloween--css__shelf:before {
+	 width: 90%;
+	 height: 100%;
+	 background-color: #8f65a9;
+	 border-radius: 0px 100px 0 0;
+	 bottom: 0;
+	 opacity: 0.1;
+	 z-index: 2;
+}
+ .halloween--css__shelf-two {
+	 top: 340px;
+}
+ .halloween--css__shelf-two .halloween--css__shelf:after {
+	 width: 15%;
+	 height: 100%;
+	 background-color: #8f65a9;
+	 border-radius: 0px 100% 0 0;
+	 bottom: 0;
+	 opacity: 0.4;
+	 z-index: 3;
+}
+ .halloween--css__shelf-two .halloween--css__shelf:before {
+	 width: 70%;
+	 height: 100%;
+	 background-color: #8f65a9;
+	 border-radius: 0px 40px 0 0;
+	 bottom: 0;
+	 z-index: 2;
+	 opacity: 0.2;
+}
+ .halloween--css__shelf-three {
+	 top: 460px;
+}
+ .halloween--css__shelf-three .halloween--css__shelf:after {
+	 width: 27%;
+	 height: 100%;
+	 background-color: #8f65a9;
+	 border-radius: 0px 5px 0 0;
+	 bottom: 0;
+	 opacity: 0.4;
+	 z-index: 3;
+}
+ .halloween--css__shelf-three .halloween--css__shelf:before {
+	 width: 80%;
+	 height: 100%;
+	 background-color: #8f65a9;
+	 border-radius: 0px 5px 0 0;
+	 bottom: 0;
+	 opacity: 0.2;
+	 z-index: 2;
+}
+ .halloween--css__shelf {
+	 width: 220px;
+	 height: 20px;
+	 top: 0px;
+	 right: 0px;
+	 z-index: 2;
+}
+ .halloween--css__shelf .halloween--css__base {
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 2px;
+	 background-color: #3a0956;
+}
+ .halloween--css__shelf .halloween--css__shelf-hooks {
+	 background-color: #1c0526;
+	 background: linear-gradient(to right, #3a0956 0%, #3a0956 50%, #1c0526 50%, #1c0526 100%);
+	 right: 15px;
+	 height: 20px;
+	 width: 14px;
+	 z-index: -1;
+	 top: 100%;
+	 border-radius: 0 0 5px 5px;
+}
+ .halloween--css__shelf .halloween--css__shelf-hooks:after {
+	 width: 100%;
+	 height: 100%;
+	 right: 176px;
+	 background: linear-gradient(to right, #500d78 0%, #500d78 50%, #1c0526 50%, #1c0526 100%);
+	 border-radius: 0 0 5px 5px;
+}
+ .halloween--css__bottle {
+	 transform-origin: bottom center;
+}
+ .halloween--css__bottle .halloween--css__bowl {
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 50%;
+	 background-color: #e6eff2;
+	 overflow: hidden;
+}
+ .halloween--css__bottle .halloween--css__bowl:after {
+	 background-color: #a8dcea;
+}
+ .halloween--css__bottle .halloween--css__bowl-in {
+	 width: 88%;
+	 height: 88%;
+	 left: 6%;
+	 bottom: 6%;
+	 border-radius: 50%;
+	 overflow: hidden;
+	 z-index: 2;
+}
+ .halloween--css__bottle .halloween--css__liquid {
+	 width: 100%;
+	 height: 70%;
+	 bottom: 0;
+	 background-color: #500d78;
+}
+ .halloween--css__bottle .halloween--css__liquid:after {
+	 background-color: #3a0956;
+}
+ .halloween--css__bottle .halloween--css__liquid .halloween--css__bottle-bubble {
+	 border-radius: 20px;
+	 width: 5px;
+	 height: 5px;
+	 top: 14px;
+	 left: 2px;
+	 background-color: #6c11a1;
+	 z-index: 2;
+}
+ .halloween--css__bottle .halloween--css__liquid .halloween--css__bottle-bubble:nth-child(2) {
+	 top: 3px;
+	 left: 10px;
+	 width: 7px;
+	 height: 7px;
+}
+ .halloween--css__bottle .halloween--css__liquid .halloween--css__bottle-bubble:nth-child(3) {
+	 top: 6px;
+	 left: 25px;
+	 width: 5px;
+	 height: 5px;
+}
+ .halloween--css__bottle .halloween--css__liquid .halloween--css__bottle-bubble:nth-child(4) {
+	 top: 17px;
+	 left: 30px;
+	 width: 5px;
+	 height: 5px;
+}
+ .halloween--css__bottle .halloween--css__liquid .halloween--css__bottle-bubble:nth-child(5) {
+	 top: -4px;
+	 left: 30px;
+	 width: 8px;
+	 height: 8px;
+	 background-color: #3a0956;
+}
+ .halloween--css__bottle .halloween--css__bottle-reflection {
+	 opacity: 0.5;
+	 border-radius: 0px 0px 0px 50px;
+	 border: 6px solid #feffff;
+	 border-top: 0;
+	 border-right: 0;
+	 width: 18px;
+	 height: 18px;
+	 bottom: 5px;
+	 left: 5px;
+	 z-index: 10;
+}
+ .halloween--css__bottle .halloween--css__bottle-reflection:after {
+	 width: 6px;
+	 height: 6px;
+	 border-radius: 50%;
+	 background-color: #feffff;
+	 bottom: 10px;
+	 left: -6px;
+	 box-shadow: 15px 16px #feffff;
+}
+ .halloween--css__bottle-1 {
+	 bottom: 20px;
+	 left: 35%;
+	 width: 50px;
+	 height: 50px;
+	 transform: scale(0.8);
+}
+ .halloween--css__bottle-1 *:after {
+	 width: 50%;
+	 height: 100%;
+	 right: 0;
+}
+ .halloween--css__bottle-1 .halloween--css__bottle-neck {
+	 width: 12px;
+	 height: 20px;
+	 top: -16px;
+	 left: 19px;
+	 background-color: #e6eff2;
+}
+ .halloween--css__bottle-1 .halloween--css__bottle-neck:after {
+	 background-color: #a8dcea;
+}
+ .halloween--css__bottle-1 .halloween--css__bottle-neck:before {
+	 background-color: #feffff;
+	 height: 80%;
+	 width: 30%;
+	 left: 12%;
+	 border-radius: 3px;
+	 z-index: 2;
+	 opacity: 0.5;
+}
+ .halloween--css__bottle-1 .halloween--css__bottle-top {
+	 width: 24px;
+	 height: 7px;
+	 top: -23px;
+	 left: 13px;
+	 border-radius: 5px;
+	 background-color: #e6eff2;
+}
+ .halloween--css__bottle-1 .halloween--css__bottle-top:after {
+	 background-color: #a8dcea;
+	 border-radius: 0 5px 5px 0;
+}
+ .halloween--css__crystal-ball {
+	 left: 10px;
+	 bottom: 20px;
+	 width: 60px;
+	 height: 60px;
+}
+ .halloween--css__crystal-ball .halloween--css__stand {
+	 z-index: 2;
+	 width: 50px;
+	 left: 5px;
+	 height: 10px;
+	 border-radius: 3px;
+	 background-color: #e6eff2;
+	 background: linear-gradient(to right, #e6eff2 0%, #e6eff2 50%, #a8dcea 50%, #a8dcea 100%);
+	 bottom: 0;
+}
+ .halloween--css__crystal-ball .halloween--css__stand:after {
+	 width: 40px;
+	 left: 5px;
+	 height: 7px;
+	 border-radius: 2px;
+	 bottom: 9px;
+	 background: linear-gradient(to right, #a8dcea 0%, #a8dcea 50%, #92bfcc 50%, #92bfcc 100%);
+}
+ .halloween--css__crystal-ball .halloween--css__ball {
+	 border-radius: 50%;
+	 width: 56px;
+	 height: 56px;
+	 left: 2px;
+	 top: -6px;
+	 background-color: #f495f0;
+	 overflow: hidden;
+}
+ .halloween--css__crystal-ball .halloween--css__ball:after {
+	 width: 50%;
+	 height: 100%;
+	 right: 0;
+	 background-color: #f175eb;
+}
+ .halloween--css__crystal-ball .halloween--css__ball .halloween--css__ball-highlight {
+	 opacity: 0.5;
+	 border-radius: 0px 0px 0px 50px;
+	 border: 6px solid #feffff;
+	 border-top: 0;
+	 border-right: 0;
+	 width: 18px;
+	 height: 18px;
+	 bottom: 10px;
+	 left: 7px;
+	 z-index: 10;
+}
+ .halloween--css__crystal-ball .halloween--css__ball .halloween--css__ball-highlight:after {
+	 width: 6px;
+	 height: 6px;
+	 border-radius: 50%;
+	 background-color: #feffff;
+	 bottom: 10px;
+	 left: -6px;
+	 box-shadow: 15px 16px #feffff;
+}
+ .halloween--css__drippings {
+	 width: 30px;
+	 height: 12px;
+	 background-color: #3ebcbc;
+	 left: 58%;
+	 border-radius: 3px;
+	 top: -1px;
+	 z-index: 15;
+}
+ .halloween--css__drippings:after {
+	 width: 8px;
+	 height: 18px;
+	 border-radius: 3px;
+	 background-color: #3ebcbc;
+	 top: 8px;
+	 right: 0px;
+}
+ .halloween--css__drippings  .halloween--css__drip {
+	 width: 8px;
+	 height: 12px;
+	 border-radius: 3px;
+	 background-color: #3ebcbc;
+	 top: 10px;
+	 right: 0px;
+	 animation: halloween--css--drip 5s ease-in infinite;
+}
+ .halloween--css__bottle-3 {
+	 transform-origin: bottom right;
+	 bottom: 70px;
+	 left: 73%;
+	 width: 50px;
+	 height: 50px;
+	 transform: rotate(-90deg);
+}
+ .halloween--css__bottle-3 *:after {
+	 width: 50%;
+	 height: 100%;
+	 right: 0;
+}
+ .halloween--css__bottle-3 .halloween--css__bowl {
+	 width: 80%;
+	 height: 80%;
+	 left: 0px;
+	 border-radius: 5px;
+	 background-color: #e6eff2;
+	 overflow: hidden;
+}
+ .halloween--css__bottle-3 .halloween--css__bowl:after {
+	 background-color: #a8dcea;
+	 width: 20%;
+}
+ .halloween--css__bottle-3 .halloween--css__bowl:before {
+	 z-index: 3;
+	 width: 20px;
+	 height: 8px;
+	 border-radius: 10px;
+	 background-color: #feffff;
+	 opacity: 0.4;
+	 left: 5px;
+	 top: 6px;
+}
+ .halloween--css__bottle-3 .halloween--css__bowl .halloween--css__bowl-in {
+	 border-radius: 5px;
+}
+ .halloween--css__bottle-3 .halloween--css__bowl .halloween--css__liquid {
+	 height: 100%;
+	 width: 38%;
+	 bottom: 0;
+	 left: 0;
+	 background-color: #3ebcbc;
+	 z-index: 2;
+}
+ .halloween--css__bottle-3 .halloween--css__bowl .halloween--css__liquid:after {
+	 background-color: #3ebcbc;
+}
+ .halloween--css__bottle-3 .halloween--css__bottle-neck {
+	 width: 10px;
+	 height: 10px;
+	 top: -10px;
+	 left: 15px;
+	 background-color: #e6eff2;
+}
+ .halloween--css__bottle-3 .halloween--css__bottle-neck:after {
+	 background-color: #a8dcea;
+}
+ .halloween--css__bottle-3 .halloween--css__bottle-top {
+	 width: 14px;
+	 height: 7px;
+	 top: -16px;
+	 left: 13px;
+	 border-radius: 5px;
+	 background-color: #e6eff2;
+}
+ .halloween--css__bottle-3 .halloween--css__bottle-top:after {
+	 background-color: #a8dcea;
+	 border-radius: 0 5px 5px 0;
+}
+ .halloween--css__skull {
+	 width: 60px;
+	 height: 60px;
+	 bottom: 100%;
+	 right: 12%;
+}
+ .halloween--css__skull .halloween--css__head {
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 30px 30px 18px 18px;
+	 background-color: #feffff;
+	 overflow: hidden;
+}
+ .halloween--css__skull .halloween--css__head .halloween--css__skull-stain {
+	 width: 40px;
+	 height: 20px;
+	 left: -2px;
+	 top: -5px;
+	 border-radius: 10px;
+	 background-color: #3ebcbc;
+	 transform: skewX(-10deg);
+}
+ .halloween--css__skull .halloween--css__head .halloween--css__skull-stain:before {
+	 width: 10px;
+	 height: 20px;
+	 border-radius: 5px;
+	 background-color: #3ebcbc;
+	 top: 12px;
+	 left: 6px;
+}
+ .halloween--css__skull .halloween--css__head:before {
+	 width: 50%;
+	 height: 100%;
+	 right: 0;
+	 background-color: rgba(20, 1, 30, 0.15);
+}
+ .halloween--css__skull .halloween--css__eye {
+	 left: 15%;
+	 top: 37%;
+	 background-color: #14011e;
+	 width: 17px;
+	 height: 24px;
+	 border-radius: 20px;
+	 transform: rotate(20deg);
+}
+ .halloween--css__skull .halloween--css__eye:after {
+	 background-color: #ee8228;
+	 width: 8px;
+	 height: 8px;
+	 border-radius: 10px;
+	 top: 8px;
+	 left: 4px;
+	 box-shadow: 0 0 2px #ee8228, 0 0 6px #ee8228;
+	 animation: halloween--css--eyes 15s linear infinite;
+}
+ .halloween--css__skull .halloween--css__eye:nth-child(2) {
+	 left: auto;
+	 right: 15%;
+	 transform: rotate(-20deg);
+}
+ .halloween--css__skull .halloween--css__nose {
+	 top: 76%;
+	 left: 40%;
+	 background-color: #14011e;
+	 width: 5px;
+	 height: 10px;
+	 border-radius: 10px;
+	 box-shadow: 7px 0 #14011e;
+}
+ .halloween--css__skull .halloween--css__teeth {
+	 background-color: #feffff;
+	 width: 60%;
+	 height: 10px;
+	 top: 92%;
+	 left: 20%;
+	 border-radius: 5px;
+}
+ .halloween--css__skull .halloween--css__teeth:before {
+	 width: 50%;
+	 height: 100%;
+	 right: 0;
+	 background-color: rgba(20, 1, 30, 0.15);
+}
+ .halloween--css__skull .halloween--css__tooth {
+	 top: 50%;
+	 width: 8px;
+	 height: 10px;
+	 background-color: #feffff;
+	 border-radius: 2px;
+}
+ .halloween--css__skull .halloween--css__tooth:after {
+	 height: 100%;
+	 right: 0;
+}
+ .halloween--css__skull .halloween--css__tooth:nth-child(2) {
+	 left: 14px;
+}
+ .halloween--css__skull .halloween--css__tooth:nth-child(2):after {
+	 width: 50%;
+	 background-color: rgba(20, 1, 30, 0.15);
+}
+ .halloween--css__skull .halloween--css__tooth:nth-child(3) {
+	 left: 28px;
+}
+ .halloween--css__skull .halloween--css__tooth:nth-child(3):after {
+	 width: 100%;
+	 background-color: rgba(20, 1, 30, 0.15);
+}
+ .halloween--css__candles {
+	 width: 50%;
+	 height: 40px;
+	 bottom: 10px;
+	 left: 15%;
+}
+ .halloween--css__candle {
+	 width: 30px;
+	 height: 30px;
+	 background-color: #ee8228;
+}
+ .halloween--css__candle:after {
+	 width: 50%;
+	 height: 100%;
+	 right: 0;
+	 background-color: #d16d1b;
+}
+ .halloween--css__candle:before {
+	 z-index: -1;
+	 border-radius: 50%;
+	 width: 50px;
+	 height: 50px;
+	 bottom: 40px;
+	 left: -10px;
+	 background-color: #f5b987;
+	 opacity: 0.2;
+}
+ .halloween--css__candle .halloween--css__candle-reflection {
+	 width: 8px;
+	 height: 24px;
+	 background-color: #fdf0e5;
+	 opacity: 0.4;
+	 border-radius: 6px;
+	 left: 0px;
+	 bottom: 5px;
+}
+ .halloween--css__candle .halloween--css__candle-wax {
+	 background-color: #f9d4b6;
+	 border-radius: 6px;
+	 width: 120%;
+	 left: -10%;
+	 height: 10px;
+	 top: -10px;
+	 z-index: 2;
+}
+ .halloween--css__candle .halloween--css__candle-wax .halloween--css__wax-reflection-top {
+	 width: 20px;
+	 height: 8px;
+	 border-radius: 4px;
+	 background-color: #fdf0e5;
+	 opacity: 0.8;
+	 left: 0px;
+	 top: 0px;
+	 z-index: 4;
+}
+ .halloween--css__candle .halloween--css__candle-wax .halloween--css__wax-reflection {
+	 width: 8px;
+	 height: 8px;
+	 border-radius: 4px;
+	 background-color: #fdf0e5;
+	 opacity: 0.8;
+	 left: 3px;
+	 top: 20px;
+	 z-index: 4;
+}
+ .halloween--css__candle .halloween--css__candle-wax:after {
+	 width: 8px;
+	 height: 20px;
+	 background-color: #f9d4b6;
+	 border-radius: 6px;
+	 left: 3px;
+	 top: 5px;
+}
+ .halloween--css__candle .halloween--css__candle-wax:before {
+	 width: 8px;
+	 height: 12px;
+	 background-color: #f9d4b6;
+	 border-radius: 6px;
+	 right: 10px;
+	 top: 5px;
+}
+ .halloween--css__candle .halloween--css__flame {
+	 width: 24px;
+	 height: 24px;
+	 bottom: 150%;
+	 left: 3px;
+	 animation: halloween--css--flicker 15s linear infinite;
+}
+ .halloween--css__candle .halloween--css__flame .halloween--css__flame-in {
+	 width: 100%;
+	 height: 100%;
+	 background-color: #ee8228;
+	 border-radius: 0 50% 50%;
+	 transform: rotate(45deg);
+	 animation: halloween--css--flame 2s linear infinite;
+}
+ .halloween--css__candle .halloween--css__flame .halloween--css__flame-in:before {
+	 border-radius: 0 50% 50%;
+	 background-color: #f5b987;
+	 height: 70%;
+	 width: 70%;
+	 bottom: 0%;
+	 left: 30%;
+}
+ .halloween--css__candle:nth-child(2) {
+	 left: 50px;
+	 height: 40px;
+	 bottom: 10px;
+}
+ .halloween--css__candle:nth-child(2):before {
+	 bottom: 50px;
+}
+ .halloween--css__candle:nth-child(2) .halloween--css__flame {
+	 bottom: 140%;
+	 animation: halloween--css---delay: 0.15s;
+}
+ .halloween--css__spider-group {
+	 width: 40px;
+	 height: 80px;
+	 right: 80px;
+	 top: 20px;
+	 transform: scale(0.9);
+}
+ .halloween--css__spider-group .halloween--css__thread {
+	 width: 1px;
+	 height: 50px;
+	 top: -4px;
+	 right: 0;
+	 background-color: #feffff;
+}
+ .halloween--css__spider-group .halloween--css__spider {
+	 border-radius: 50%;
+	 width: 22px;
+	 height: 22px;
+	 top: 35px;
+	 right: -11px;
+	 background-color: #ee8228;
+	 animation: halloween--css--spider 5s ease infinite;
+	 background: linear-gradient(to right, #ee8228 0%, #ee8228 50%, #d26911 50%, #d26911 100%);
+}
+ .halloween--css__spider-group .halloween--css__spider:before {
+	 border-radius: 50%;
+	 width: 16px;
+	 height: 16px;
+	 top: -8px;
+	 right: 3px;
+	 background-color: #ee8228;
+	 background: linear-gradient(to right, #ee8228 0%, #ee8228 50%, #d26911 50%, #d26911 100%);
+}
+ .halloween--css__spider-group .halloween--css__spider:after {
+	 background-color: #fdf0e5;
+	 width: 12px;
+	 height: 12px;
+	 border-radius: 50%;
+	 left: 2px;
+	 top: 5px;
+	 opacity: 0.3;
+}
+ .halloween--css__spider-group .halloween--css__spider .halloween--css__spider-leg {
+	 width: 7px;
+	 height: 3px;
+	 right: -5px;
+	 top: 8px;
+	 background-color: #d26911;
+	 border-radius: 1px;
+}
+ .halloween--css__spider-group .halloween--css__spider .halloween--css__spider-leg:after {
+	 width: 7px;
+	 height: 3px;
+	 transform: rotate(50deg);
+	 background-color: #d26911;
+	 border-radius: 1px;
+	 right: -5px;
+	 top: 2px;
+}
+ .halloween--css__spider-group .halloween--css__spider .halloween--css__spider-leg:nth-child(2) {
+	 top: 1px;
+	 right: -4px;
+	 transform: rotate(-25deg);
+}
+ .halloween--css__spider-group .halloween--css__spider .halloween--css__spider-leg:nth-child(3) {
+	 top: 15px;
+	 right: -4px;
+	 transform: rotate(25deg);
+}
+ .halloween--css__spider-group .halloween--css__spider .halloween--css__spider-leg:nth-child(4), .halloween--css__spider-group .halloween--css__spider .halloween--css__spider-leg:nth-child(5), .halloween--css__spider-group .halloween--css__spider .halloween--css__spider-leg:nth-child(6) {
+	 background-color: #ee8228;
+	 transform: scaleX(-1);
+	 right: 21px;
+}
+ .halloween--css__spider-group .halloween--css__spider .halloween--css__spider-leg:nth-child(4):after, .halloween--css__spider-group .halloween--css__spider .halloween--css__spider-leg:nth-child(5):after, .halloween--css__spider-group .halloween--css__spider .halloween--css__spider-leg:nth-child(6):after {
+	 background-color: #ee8228;
+}
+ .halloween--css__spider-group .halloween--css__spider .halloween--css__spider-leg:nth-child(5) {
+	 transform: scaleX(-1) rotate(-25deg);
+	 top: 1px;
+	 right: 18px;
+}
+ .halloween--css__spider-group .halloween--css__spider .halloween--css__spider-leg:nth-child(6) {
+	 transform: scaleX(-1) rotate(35deg);
+	 top: 15px;
+	 right: 20px;
+}
+ .halloween--css__books {
+	 bottom: 18px;
+	 left: 10px;
+	 height: 60px;
+	 width: 120px;
+}
+ .halloween--css__books .halloween--css__book {
+	 height: 24px;
+	 width: 60px;
+	 background-color: #faf1c5;
+	 bottom: 2px;
+	 border-radius: 8px 0 0 8px;
+}
+ .halloween--css__books .halloween--css__book:before {
+	 height: 4px;
+	 width: 94%;
+	 bottom: 5px;
+	 left: 4px;
+	 background-color: #d5cda8;
+}
+ .halloween--css__books .halloween--css__book:after {
+	 width: 105%;
+	 height: 100%;
+	 border: 5px solid #c237bb;
+	 border-right: 0;
+	 border-radius: 8px 0 0 8px;
+}
+ .halloween--css__books .halloween--css__book .halloween--css__details {
+	 width: 60%;
+	 height: 1px;
+	 background-color: rgba(219, 77, 39, 0.3);
+	 top: 8px;
+	 left: 4px;
+	 box-shadow: 20px 4px rgba(219, 77, 39, 0.3);
+}
+ .halloween--css__books .halloween--css__book:nth-child(2) {
+	 transform: scaleX(-1);
+	 bottom: 25px;
+	 left: 10px;
+	 z-index: 2;
+}
+ .halloween--css__books .halloween--css__book:nth-child(2):after {
+	 border-color: #ee8228;
+}
+ .halloween--css__books .halloween--css__book:nth-child(3) {
+	 bottom: 49px;
+	 left: 5px;
+	 z-index: 2;
+}
+ .halloween--css__books .halloween--css__book:nth-child(3):after {
+	 border-color: #3ebcbc;
+}
+ .halloween--css__books .halloween--css__book-up {
+	 z-index: 5;
+	 width: 26px;
+	 height: 84px;
+	 left: 73px;
+	 border-radius: 2px;
+	 background-color: #500d78;
+	 bottom: 3px;
+	 transform: rotate(-15deg);
+}
+ .halloween--css__books .halloween--css__book-up:after {
+	 width: 50%;
+	 height: 100%;
+	 right: 0;
+	 background-color: rgba(28, 5, 38, 0.5);
+}
+ .halloween--css__books .halloween--css__book-up .halloween--css__details {
+	 width: 100%;
+	 height: 4px;
+	 background-color: #ee8228;
+	 bottom: 12px;
+	 box-shadow: 0 -10px #ee8228;
+}
+ .halloween--css__books .halloween--css__book-up .halloween--css__details:after {
+	 width: 20px;
+	 height: 20px;
+	 border-radius: 20px;
+	 bottom: 45px;
+	 box-shadow: 5px 5px #ee8228;
+	 transform: rotate(110deg);
+	 left: 11px;
+}
+ .halloween--css__candy-bowl {
+	 width: 75px;
+	 height: 75px;
+	 right: 17px;
+	 border-radius: 50%;
+	 background-color: #e6eff2;
+	 bottom: 22px;
+}
+ .halloween--css__candy-bowl:before {
+	 background-color: #a8dcea;
+	 width: 50%;
+	 height: 100%;
+	 right: 0;
+	 border-radius: 0 50px 50px 0;
+	 z-index: 1;
+}
+ .halloween--css__candy-bowl:after {
+	 bottom: -1px;
+	 height: 6px;
+	 width: 46px;
+	 background: linear-gradient(to right, #e6eff2 50%, #a8dcea 50%, #a8dcea 100%);
+	 border-radius: 3px;
+	 left: calc(50% - 23px);
+}
+ .halloween--css__candy-bowl .halloween--css__candy-bowl-top {
+	 height: 5px;
+	 width: 40px;
+	 background: linear-gradient(to right, #e6eff2 50%, #a8dcea 50%, #a8dcea 100%);
+	 border-radius: 3px;
+	 left: calc(50% - 20px);
+	 top: 0px;
+	 z-index: 20;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-bowl-in {
+	 width: 90%;
+	 height: 90%;
+	 left: 5%;
+	 top: 5%;
+	 border-radius: 60px;
+	 overflow: hidden;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-bowl-in:after {
+	 background-color: #3a0956;
+	 width: 50%;
+	 height: 100%;
+	 right: 0;
+	 border-radius: 0 50px 50px 0;
+	 z-index: 16;
+	 opacity: 0.1;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-bowl-reflection {
+	 opacity: 0.7;
+	 border-radius: 0px 0px 0px 50px;
+	 border: 6px solid #feffff;
+	 border-top: 0;
+	 border-right: 0;
+	 width: 30px;
+	 height: 30px;
+	 bottom: 10px;
+	 left: 10px;
+	 z-index: 21;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-bowl-reflection:after {
+	 width: 6px;
+	 height: 6px;
+	 border-radius: 50%;
+	 background-color: #feffff;
+	 bottom: 20px;
+	 left: -6px;
+	 box-shadow: 27px 26px #feffff;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-1 {
+	 width: 20px;
+	 height: 20px;
+	 background-color: #ed42e4;
+	 border-radius: 50%;
+	 bottom: 2px;
+	 left: 12px;
+	 background: conic-gradient(#ed42e4 0, #ed42e4 12.5%, #500d78 0 25%, #ed42e4 25%, #ed42e4 37.5%, #500d78 37.5%, #500d78 50%, #ed42e4 50%, #ed42e4 62.5%, #500d78 62.5%, #500d78 75%, #ed42e4 75%, #ed42e4 87.5%, #500d78 87.5%, #500d78 100%);
+	 transform: rotate(-25deg);
+	 z-index: 1;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-1:after {
+	 opacity: 0.6;
+	 border-radius: 0px 0px 0px 50px;
+	 border: 3px solid #feffff;
+	 border-top: 0;
+	 border-right: 0;
+	 width: 8px;
+	 height: 8px;
+	 bottom: 8px;
+	 left: 2px;
+	 z-index: 10;
+	 transform: rotate(45deg);
+}
+ .halloween--css__candy-bowl .halloween--css__candy-1:nth-child(2) {
+	 top: 5px;
+	 left: 45px;
+	 z-index: 8;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-1:nth-child(3) {
+	 top: 10px;
+	 left: 5px;
+	 z-index: 12;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-1:nth-child(4) {
+	 top: 29px;
+	 left: 30px;
+	 z-index: 5;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-2 {
+	 width: 16px;
+	 height: 16px;
+	 background-color: #ee8228;
+	 border-radius: 50%;
+	 left: 30px;
+	 bottom: 1px;
+	 transform: rotate(-25deg);
+	 box-shadow: 0 2px #c54c17;
+	 z-index: 2;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-2:after {
+	 background-color: #ee8228;
+	 width: 70%;
+	 height: 60%;
+	 left: 70%;
+	 top: 20%;
+	 border-radius: 50% 20% 20% 50%;
+	 transform: rotateY(35deg);
+}
+ .halloween--css__candy-bowl .halloween--css__candy-2:before {
+	 background-color: #ee8228;
+	 width: 70%;
+	 height: 60%;
+	 right: 70%;
+	 top: 20%;
+	 border-radius: 20% 50% 50% 20%;
+	 transform: rotateY(-35deg);
+}
+ .halloween--css__candy-bowl .halloween--css__candy-2 .halloween--css__candy-reflection {
+	 background-color: #feffff;
+	 width: 60%;
+	 height: 60%;
+	 border-radius: 50%;
+	 top: 5%;
+	 left: 15%;
+	 opacity: 0.3;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-2:nth-child(5) {
+	 top: 35px;
+	 left: 50px;
+	 transform: rotate(-45deg);
+	 z-index: 11;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-2:nth-child(6) {
+	 top: 40px;
+	 left: 2px;
+	 transform: rotate(-45deg);
+}
+ .halloween--css__candy-bowl .halloween--css__candy-2:nth-child(7) {
+	 top: 13px;
+	 left: 28px;
+	 transform: rotate(25deg);
+}
+ .halloween--css__candy-bowl .halloween--css__candy-3 {
+	 width: 20px;
+	 height: 12px;
+	 border-radius: 3px;
+	 overflow: hidden;
+	 background-image: repeating-linear-gradient(-40deg, #feffff, #feffff 3px, #3ebcbc 3px, #3ebcbc 6px);
+	 left: 15px;
+	 top: 25px;
+	 z-index: 3;
+	 transform: rotate(-15deg);
+}
+ .halloween--css__candy-bowl .halloween--css__candy-3:after {
+	 width: 100%;
+	 height: 4px;
+	 bottom: 0;
+	 background-color: #329399;
+	 opacity: 0.5;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-3:nth-child(9) {
+	 top: 22px;
+	 left: 48px;
+	 transform: rotate(-15deg);
+}
+ .halloween--css__candy-bowl .halloween--css__candy-3:nth-child(10) {
+	 top: 30px;
+	 left: -3px;
+	 transform: rotate(-85deg);
+}
+ .halloween--css__candy-bowl .halloween--css__candy-3:nth-child(11) {
+	 top: 45px;
+	 left: 35px;
+	 transform: rotate(25deg);
+}
+ .halloween--css__candy-bowl .halloween--css__candy-4 {
+	 width: 30px;
+	 height: 10px;
+	 z-index: 40;
+	 border-radius: 3px;
+	 left: 20px;
+	 top: 5px;
+	 background-color: #3a0956;
+	 transform: rotate(5deg);
+	 z-index: 1;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-4:after {
+	 background-color: #3a0956;
+	 width: 50%;
+	 height: 60%;
+	 left: 70%;
+	 top: 20%;
+	 border-radius: 50% 20% 20% 50%;
+	 transform: rotateY(35deg);
+}
+ .halloween--css__candy-bowl .halloween--css__candy-4:before {
+	 background-color: #3a0956;
+	 width: 50%;
+	 height: 60%;
+	 right: 70%;
+	 top: 20%;
+	 border-radius: 20% 50% 50% 20%;
+	 transform: rotateY(-35deg);
+}
+ .halloween--css__candy-bowl .halloween--css__candy-4 .halloween--css__candy-reflection {
+	 background-color: #8f65a9;
+	 width: 80%;
+	 height: 4px;
+	 border-radius: 2px;
+	 bottom: 2px;
+	 left: 2px;
+	 z-index: 20;
+	 opacity: 0.7;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-4:nth-child(14) {
+	 top: 50px;
+	 left: 40px;
+	 transform: rotate(-45deg);
+	 z-index: 2;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-4:nth-child(15) {
+	 top: 30px;
+	 left: -3px;
+	 transform: rotate(-85deg);
+	 z-index: 13;
+}
+ .halloween--css__candy-bowl .halloween--css__candy-4:nth-child(16) {
+	 top: 43px;
+	 left: 22px;
+	 transform: rotate(25deg);
+	 z-index: 2;
+}
+ .halloween--css__cauldron {
+	 width: 180px;
+	 height: 180px;
+	 left: calc(50% - 90px);
+	 bottom: -12px;
+	 background-color: #500d78;
+	 border-radius: 50%;
+	 transform: scale(0.9);
+	 z-index: 3;
+}
+ .halloween--css__cauldron:after {
+	 background-color: transparent;
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 50%;
+	 top: -25px;
+	 left: 0;
+	 box-shadow: 0px 25px #310849;
+}
+ .halloween--css__cauldron-top {
+	 width: 90%;
+	 left: 5%;
+	 height: 10px;
+	 background-color: #3a0956;
+	 top: 28px;
+	 border-radius: 10px;
+	 z-index: 4;
+}
+ .halloween--css__cauldron-top:before {
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 10px;
+	 box-shadow: 0px -2px #f175eb;
+	 top: 2px;
+}
+ .halloween--css__cauldron-top:after {
+	 background-color: #310849;
+	 height: 100%;
+	 width: 90%;
+	 top: 100%;
+	 border-radius: 2px;
+	 left: 5%;
+}
+ .halloween--css__handle {
+	 width: 80%;
+	 height: 40%;
+	 top: 21%;
+	 left: 10%;
+	 border-radius: 0 0 40px 40px;
+	 background-color: transparent;
+	 border: 8px solid #310849;
+}
+ .halloween--css__handle:before, .halloween--css__handle:after {
+	 width: 60px;
+	 height: 14px;
+	 background-color: #ee8228;
+	 bottom: -10px;
+	 left: 35px;
+	 border-radius: 5px;
+}
+ .halloween--css__handle:after {
+	 height: 7px;
+	 border-radius: 0 0 5px 5px;
+	 background-color: #c54c17;
+}
+ .halloween--css__bubbles {
+	 z-index: 1;
+	 width: 100%;
+	 height: 40px;
+	 top: -14px;
+	 animation: halloween--css--bubble-grow 15s linear infinite;
+	 transform-origin: bottom center;
+}
+ .halloween--css__bubbles .halloween--css__bubble {
+	 bottom: -10px;
+	 width: 30px;
+	 height: 30px;
+	 border-radius: 50%;
+	 left: 135px;
+	 background-color: #ef59e7;
+	 animation: halloween--css--bubble 3s linear infinite;
+}
+ .halloween--css__bubbles .halloween--css__bubble:after {
+	 width: 40%;
+	 height: 40%;
+	 right: 15%;
+	 top: 15%;
+	 border-radius: 50%;
+	 background-color: rgba(254, 255, 255, 0.3);
+}
+ .halloween--css__bubbles .halloween--css__bubble:before {
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 50%;
+	 left: 10px;
+	 background-color: transparent;
+	 box-shadow: -10px 0 #ca44c3;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-of-type(1) {
+	 animation: halloween--css---delay: 3s;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-of-type(2) {
+	 animation: halloween--css---delay: 1s;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-of-type(3) {
+	 animation: halloween--css---delay: 1s;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-of-type(4) {
+	 animation: halloween--css---delay: 4s;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-of-type(5) {
+	 animation: halloween--css---delay: 5s;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-of-type(6) {
+	 animation: halloween--css---delay: 4s;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-of-type(7) {
+	 animation: halloween--css---delay: 5s;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-of-type(8) {
+	 animation: halloween--css---delay: 4s;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-child(3) {
+	 bottom: -10px;
+	 left: 10px;
+	 width: 50px;
+	 height: 50px;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-child(4) {
+	 bottom: -10px;
+	 left: 40px;
+	 width: 40px;
+	 height: 40px;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-child(5) {
+	 bottom: -5px;
+	 left: 120px;
+	 width: 30px;
+	 height: 30px;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-child(6) {
+	 bottom: -10px;
+	 left: 15px;
+	 width: 30px;
+	 height: 30px;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-child(7) {
+	 bottom: -10px;
+	 left: 70px;
+	 width: 50px;
+	 height: 50px;
+}
+ .halloween--css__bubbles .halloween--css__bubble:nth-child(8) {
+	 bottom: -15px;
+	 left: 100px;
+	 width: 40px;
+	 height: 40px;
+}
+ .halloween--css__witch {
+	 width: 120px;
+	 height: 130px;
+	 border-radius: 50px 50px 0 0;
+	 background-color: #1c0526;
+	 bottom: 0;
+	 left: calc(50% - 60px);
+	 z-index: 2;
+}
+ .halloween--css__witch .halloween--css__middle {
+	 width: 80px;
+	 height: 80px;
+	 background-color: #500d78;
+	 bottom: 120px;
+	 border-radius: 40%;
+	 left: 20px;
+}
+ .halloween--css__witch .halloween--css__neck {
+	 background-color: #f2c09a;
+	 width: 30px;
+	 height: 20px;
+	 left: 35px;
+	 top: 75px;
+	 border-radius: 10px;
+}
+ .halloween--css__witch .halloween--css__right-arm {
+	 background-color: #500d78;
+}
+ .halloween--css__head-group {
+	 width: 80px;
+	 height: 85px;
+	 top: -115%;
+	 left: 10px;
+}
+ .halloween--css__witch-head {
+	 width: 100%;
+	 height: 100%;
+	 background-color: #f2c09a;
+	 border-radius: 50px;
+	 left: 10px;
+	 overflow: hidden;
+}
+ .halloween--css__witch-head:after {
+	 width: 100%;
+	 height: 100%;
+	 left: 0;
+	 border-radius: 50px;
+	 top: -4px;
+	 box-shadow: 0px 4px rgba(241, 117, 235, 0.5);
+}
+ .halloween--css__witch-head .halloween--css__cheeks {
+	 background-color: #f175eb;
+	 border-radius: 50px;
+	 width: 20px;
+	 height: 20px;
+	 top: 55%;
+	 left: 7px;
+	 box-shadow: 47px 0 #f175eb;
+}
+ .halloween--css__witch-head .halloween--css__eyes {
+	 background-color: #feffff;
+	 width: 28px;
+	 height: 28px;
+	 border-radius: 50px;
+	 top: 25px;
+	 left: 8px;
+}
+ .halloween--css__witch-head .halloween--css__eyes:before {
+	 background-color: #14011e;
+	 width: 30px;
+	 left: -2px;
+	 height: 6px;
+	 border-radius: 5px;
+	 transform: perspective(50px) rotateY(-35deg) rotate(10deg);
+	 animation: halloween--css--left-eyebrow 15s linear infinite;
+}
+ .halloween--css__witch-head .halloween--css__eyes:after {
+	 width: 11px;
+	 height: 11px;
+	 background-color: #14011e;
+	 border-radius: 50%;
+	 bottom: 3px;
+	 left: 11px;
+	 animation: halloween--css--witch-eyes 4s linear infinite;
+}
+ .halloween--css__witch-head .halloween--css__eyes:nth-child(2) {
+	 left: auto;
+	 right: 8px;
+}
+ .halloween--css__witch-head .halloween--css__eyes:nth-child(2):before {
+	 transform: perspective(50px) rotateY(35deg) rotate(-5deg);
+	 left: 0px;
+	 animation: halloween--css--right-eyebrow 15s linear infinite;
+}
+ .halloween--css__witch-head .halloween--css__eyes:nth-child(2):after {
+	 left: 5px;
+}
+ .halloween--css__witch-head .halloween--css__mouth {
+	 width: 15px;
+	 height: 15px;
+	 border: 3px solid #14011e;
+	 border-radius: 0px 0 20px 0px;
+	 border-top: 0;
+	 border-left: 0;
+	 bottom: 10px;
+	 left: 35px;
+	 transform: rotate(15deg);
+	 animation: halloween--css--mouth 15s linear infinite;
+}
+ .halloween--css__witch-head .halloween--css__mouth:after {
+	 width: 3px;
+	 height: 3px;
+	 border-radius: 50%;
+	 background-color: #14011e;
+	 top: 12px;
+	 left: -2px;
+	 box-shadow: 14px -14px #14011e;
+}
+ .halloween--css__witch-head .halloween--css__hair-front {
+	 width: 80px;
+	 height: 50px;
+	 border-radius: 50%;
+	 top: -20px;
+	 left: 20px;
+	 transform: rotate(10deg);
+	 background-color: #6d271d;
+}
+ .halloween--css__witch-head .halloween--css__hair-front:before {
+	 width: 100%;
+	 height: 100%;
+	 left: -50px;
+	 transform: rotate(-40deg);
+	 background-color: #6d271d;
+	 border-radius: 50%;
+}
+ .halloween--css__witch-head .halloween--css__hair-front:after {
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 50%;
+	 box-shadow: 0px 5px rgba(237, 66, 228, 0.4);
+	 bottom: 5px;
+}
+ .halloween--css__hair-back {
+	 top: 30px;
+	 left: -5px;
+}
+ .halloween--css__hair-back .halloween--css__hair {
+	 background-color: #6d271d;
+	 border-radius: 50%;
+	 width: 40px;
+	 height: 40px;
+	 left: -4px;
+}
+ .halloween--css__hair-back .halloween--css__hair:after {
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 50%;
+	 box-shadow: 0px 8px rgba(237, 66, 228, 0.3);
+	 bottom: 8px;
+}
+ .halloween--css__hair-back .halloween--css__hair:nth-child(2) {
+	 top: 18px;
+	 left: 8px;
+}
+ .halloween--css__hair-back .halloween--css__hair:nth-child(3) {
+	 width: 40px;
+	 height: 40px;
+	 top: -24px;
+	 left: 7px;
+}
+ .halloween--css__hair-back .halloween--css__hair:nth-child(4) {
+	 width: 30px;
+	 height: 30px;
+	 top: 18px;
+	 left: 0px;
+}
+ .halloween--css__hair-back .halloween--css__hair:nth-child(5) {
+	 width: 25px;
+	 height: 25px;
+	 top: -9px;
+	 left: 0px;
+}
+ .halloween--css__hair-back .halloween--css__hair:nth-child(6) {
+	 width: 40px;
+	 height: 40px;
+	 left: 74px;
+}
+ .halloween--css__hair-back .halloween--css__hair:nth-child(7) {
+	 top: 18px;
+	 left: 64px;
+}
+ .halloween--css__hair-back .halloween--css__hair:nth-child(8) {
+	 width: 40px;
+	 height: 40px;
+	 top: -24px;
+	 left: 60px;
+}
+ .halloween--css__hair-back .halloween--css__hair:nth-child(9) {
+	 width: 30px;
+	 height: 30px;
+	 top: 18px;
+	 left: 80px;
+}
+ .halloween--css__hair-back .halloween--css__hair:nth-child(10) {
+	 width: 25px;
+	 height: 25px;
+	 top: -9px;
+	 left: 84px;
+}
+ .halloween--css__hair-back .halloween--css__witch-ears .halloween--css__witch-ear {
+	 background-color: #f2c09a;
+	 height: 18px;
+	 width: 14px;
+	 border-radius: 10px;
+	 left: 7px;
+	 top: 5px;
+}
+ .halloween--css__hair-back .halloween--css__witch-ears .halloween--css__witch-ear:after {
+	 width: 100%;
+	 height: 100%;
+	 left: 0;
+	 border-radius: 50px;
+	 border: 0;
+	 left: 3px;
+	 box-shadow: -3px 0px #eeac7a;
+}
+ .halloween--css__hair-back .halloween--css__witch-ears .halloween--css__witch-ear:nth-child(2) {
+	 left: 88px;
+}
+ .halloween--css__hair-back .halloween--css__witch-ears .halloween--css__witch-ear:nth-child(2):after {
+	 left: -3px;
+	 box-shadow: 3px 0px #eeac7a;
+}
+ .halloween--css__hat {
+	 width: 120px;
+	 height: 150px;
+	 left: -10px;
+	 bottom: 65px;
+	 transform: rotate(-4deg);
+	 overflow: hidden;
+	 transform-origin: bottom center;
+}
+ .halloween--css__hat .halloween--css__hat-bottom {
+	 background-color: #3a0956;
+	 width: 120px;
+	 height: 16px;
+	 border-radius: 50px;
+	 bottom: 0;
+	 left: 0;
+	 overflow: hidden;
+}
+ .halloween--css__hat .halloween--css__hat-bottom:after {
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 50px;
+	 box-shadow: 0 3px rgba(241, 117, 235, 0.7);
+	 bottom: 3px;
+}
+ .halloween--css__hat .halloween--css__hat-top {
+	 width: 110px;
+	 height: 90px;
+	 bottom: -40px;
+	 left: 5px;
+	 transform: rotate(65deg);
+}
+ .halloween--css__hat .halloween--css__hat-top .halloween--css__hat-top-in {
+	 width: 100%;
+	 height: 100%;
+	 background-color: #500d78;
+	 transform: skew(35deg);
+	 border-radius: 12px 0 0;
+	 overflow: hidden;
+}
+ .halloween--css__hat .halloween--css__hat-top .halloween--css__hat-top-in:after {
+	 width: 80%;
+	 height: 70%;
+	 right: 22px;
+	 top: -35px;
+	 background-color: #3a0956;
+	 transform: rotate(35deg) skew(-35deg);
+}
+ .halloween--css__hat .halloween--css__hat-band {
+	 width: 84px;
+	 height: 40px;
+	 top: 105px;
+	 left: 18px;
+	 background-color: #ee8228;
+	 transform: perspective(200px) rotateX(65deg);
+	 border-radius: 3px;
+}
+ .halloween--css__hat .halloween--css__hat-band:after {
+	 width: 47%;
+	 height: 100%;
+	 right: 0;
+	 background-color: #d16d1b;
+}
+ .halloween--css__hat .halloween--css__hat-band-top {
+	 width: 34px;
+	 height: 30px;
+	 border-radius: 2px;
+	 top: 110px;
+	 left: 46px;
+	 border: 6px solid #3a0956;
+	 transform: perspective(200px) rotatex(25deg);
+}
+ .halloween--css__hat .halloween--css__hat-stars {
+	 width: 60px;
+	 height: 60px;
+	 bottom: 20%;
+	 left: 20%;
+	 opacity: 0.7;
+}
+ .halloween--css__hat .halloween--css__hat-star {
+	 clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	 width: 18px;
+	 height: 18px;
+	 background-color: #8f65a9;
+	 bottom: 17%;
+	 left: 65%;
+}
+ .halloween--css__hat .halloween--css__hat-star:nth-child(2) {
+	 bottom: 15%;
+	 left: 20%;
+}
+ .halloween--css__hat .halloween--css__hat-star:nth-child(3) {
+	 bottom: 55%;
+	 left: 50%;
+}
+ .halloween--css__light {
+	 width: 800px;
+	 height: 800px;
+	 border-radius: 50%;
+	 background-color: #8f65a9;
+	 background: radial-gradient(circle, #8f65a9 0%, #8f65a9 35%, #6f3990 35%, #6f3990 55%, #5f2384 55%, #5f2384 90%);
+	 bottom: -250px;
+	 left: calc(50% - 400px);
+}
+ .halloween--css__left-arm, .halloween--css__right-arm {
+	 width: 30px;
+	 height: 50px;
+	 background-color: #500d78;
+	 border-radius: 50px;
+	 right: 40px;
+	 bottom: 165px;
+	 animation: halloween--css--left-arm 4s linear infinite;
+	 transform: rotate(15deg);
+}
+ .halloween--css__right-arm {
+	 right: 80px;
+	 z-index: 10;
+	 bottom: 145px;
+	 transform: rotate(0deg);
+	 animation: halloween--css--right-arm 15s linear infinite;
+}
+ .halloween--css__right-arm .halloween--css__bottle-1 {
+	 transform: scalex(-1);
+	 top: 20px;
+	 left: -20px;
+}
+ .halloween--css__right-arm .halloween--css__bottle-1 .halloween--css__liquid {
+	 transform-origin: bottom left;
+	 border-radius: 30px;
+	 animation: halloween--css--liquid 15s linear infinite;
+	 background-color: #ed42e4;
+}
+ .halloween--css__right-arm .halloween--css__bottle-1 .halloween--css__liquid:after {
+	 background-color: #c237bb;
+}
+ .halloween--css__right-arm .halloween--css__pink-liquid {
+	 width: 5px;
+	 height: 11px;
+	 background-color: #ed42e4;
+	 top: -5px;
+	 right: 10px;
+	 border-radius: 5px;
+	 opacity: 0;
+	 transform-origin: bottom right;
+	 animation: halloween--css--liquid-2 15s linear infinite;
+}
+ .halloween--css__right-hand {
+	 background-color: #f2c09a;
+	 width: 20px;
+	 height: 30px;
+	 left: -5px;
+	 text-outline: 5px;
+	 border-radius: 50px;
+	 transform: scale(0.95);
+}
+ .halloween--css__right-hand:after {
+	 width: 100%;
+	 height: 100%;
+	 left: 0;
+	 border-radius: 50px;
+	 border: 0;
+	 left: 5px;
+	 box-shadow: -5px 0px #eeac7a;
+}
+ .halloween--css__right-hand:before {
+	 z-index: 2;
+	 width: 100%;
+	 height: 100%;
+	 left: 0;
+	 border-radius: 50px;
+	 border: 0;
+	 bottom: 4px;
+	 box-shadow: 0px 4px #f175eb;
+}
+ .halloween--css__stick-group {
+	 right: 60px;
+	 top: -40px;
+	 transform: rotate(20deg);
+	 animation: halloween--css--stick 4s linear infinite;
+	 transform-origin: top center;
+}
+ .halloween--css__stick-group .halloween--css__stick {
+	 height: 60px;
+	 width: 10px;
+	 background-color: #6d271d;
+	 border-radius: 10px;
+}
+ .halloween--css__stick-group .halloween--css__hand {
+	 background-color: #f2c09a;
+	 width: 20px;
+	 height: 30px;
+	 left: -5px;
+	 border-radius: 50px;
+}
+ .halloween--css__stick-group .halloween--css__hand:after {
+	 width: 100%;
+	 height: 100%;
+	 left: 0;
+	 border-radius: 50px;
+	 border: 0;
+	 left: -5px;
+	 box-shadow: 5px 0px #eeac7a;
+}
+ .halloween--css__stick-group .halloween--css__hand:before {
+	 z-index: 2;
+	 width: 100%;
+	 height: 100%;
+	 left: 0;
+	 border-radius: 50px;
+	 border: 0;
+	 bottom: 4px;
+	 box-shadow: 0px 4px #f175eb;
+}
+ .halloween--css__window-group {
+	 left: 50px;
+	 top: 200px;
+	 width: 200px;
+	 height: 250px;
+	 transform: scale(1.1);
+	 transform-origin: bottom center;
+	 z-index: 2;
+}
+ .halloween--css__window-group .halloween--css__window {
+	 width: 100%;
+	 height: 100%;
+	 border: 10px solid #310849;
+	 background-color: #3a0956;
+	 border-radius: 3px;
+}
+ .halloween--css__window-group .halloween--css__window:after {
+	 top: 100%;
+	 width: 120%;
+	 height: 16px;
+	 background-color: #310849;
+	 left: -10%;
+	 border-radius: 3px;
+}
+ .halloween--css__window-group .halloween--css__window:before {
+	 width: 100%;
+	 height: 14px;
+	 background-color: #310849;
+	 top: 40%;
+	 z-index: 3;
+	 box-shadow: 0 -5px #8f65a9;
+}
+ .halloween--css__window-group .halloween--css__window .halloween--css__window-reflections {
+	 background-color: #8f65a9;
+	 bottom: -16px;
+	 right: -18px;
+	 width: 50px;
+	 height: 16px;
+	 z-index: 2;
+	 border-radius: 3px;
+	 opacity: 0.4;
+}
+ .halloween--css__window-group .halloween--css__window .halloween--css__window-reflections:before {
+	 background-color: #8f65a9;
+	 right: 0px;
+	 width: 155px;
+	 height: 16px;
+	 z-index: 2;
+	 border-radius: 5px 3px 3px 3px;
+	 opacity: 0.3;
+}
+ .halloween--css__window-group .halloween--css__window .halloween--css__window-reflections:nth-child(2) {
+	 bottom: 0px;
+	 right: -10px;
+	 width: 10px;
+	 height: 90px;
+	 border-radius: 50px 0 0 0;
+}
+ .halloween--css__window-group .halloween--css__window .halloween--css__window-reflections:nth-child(2):before {
+	 bottom: 0px;
+	 right: 0px;
+	 width: 100%;
+	 height: 220px;
+	 z-index: 2;
+	 border-radius: 5px 3px 3px 3px;
+}
+ .halloween--css__window-group .halloween--css__window .halloween--css__window-reflections:nth-child(3) {
+	 background-color: #8f65a9;
+	 bottom: 124px;
+	 right: 0px;
+	 width: 130px;
+	 height: 14px;
+	 z-index: 10;
+	 opacity: 0.1;
+	 border-radius: 50px 0 0 0;
+}
+ .halloween--css__window-group .halloween--css__window .halloween--css__window-reflections:nth-child(3):before, .halloween--css__window-group .halloween--css__window .halloween--css__window-reflections:nth-child(3):after {
+	 content: none;
+}
+ .halloween--css__window-group .halloween--css__window .halloween--css__window-in {
+	 width: 100%;
+	 height: 100%;
+	 border: 6px solid #8f65a9;
+	 border-top: 0;
+	 overflow: hidden;
+}
+ .halloween--css__cat {
+	 width: 100px;
+	 z-index: 4;
+	 height: 150px;
+	 bottom: 7px;
+	 left: 80px;
+	 transform: scale(0.9);
+	 transform-origin: bottom center;
+}
+ .halloween--css__cat .halloween--css__cat-tail {
+	 background-color: #1c0526;
+	 height: 40px;
+	 width: 13px;
+	 border-radius: 50px;
+	 bottom: -25px;
+	 right: 0px;
+}
+ .halloween--css__cat .halloween--css__cat-tail .halloween--css__tail {
+	 bottom: 2px;
+	 background-color: #1c0526;
+	 height: 12px;
+	 width: 13px;
+	 border-radius: 20px 20px 0 0px;
+	 z-index: 1;
+	 animation: halloween--css--tail 15s ease infinite;
+	 transform: rotate(13deg);
+	 transform-origin: center center;
+}
+ .halloween--css__cat .halloween--css__cat-tail .halloween--css__tail .halloween--css__tail {
+	 bottom: -40%;
+}
+ .halloween--css__cat .halloween--css__cat-tail .halloween--css__tail.last {
+	 border-radius: 20px;
+}
+ .halloween--css__cat .halloween--css__cat-body {
+	 width: 70px;
+	 height: 80px;
+	 background-color: #1c0526;
+	 bottom: 0;
+	 right: 0;
+	 border-radius: 0 50% 20% 0;
+	 animation: halloween--css--cat 15s ease infinite;
+	 transform-origin: bottom center;
+}
+ .halloween--css__cat .halloween--css__cat-paw {
+	 bottom: 0;
+	 background-color: #1c0526;
+	 width: 30px;
+	 height: 11px;
+	 border-radius: 50px;
+	 left: 24px;
+}
+ .halloween--css__cat .halloween--css__cat-paw:after {
+	 height: 60px;
+	 width: 10px;
+	 background-color: #3a0956;
+	 border-radius: 4px;
+	 left: 0px;
+	 bottom: 12px;
+	 box-shadow: 1px 0 #8f65a9;
+}
+ .halloween--css__cat .halloween--css__cat-neck {
+	 bottom: 80px;
+	 right: 44px;
+	 transform: rotate(-13deg);
+}
+ .halloween--css__cat .halloween--css__cat-neck .halloween--css__neck {
+	 bottom: 2px;
+	 background-color: #1c0526;
+	 height: 12px;
+	 width: 15px;
+	 border-radius: 0 0px 20px 20px;
+	 z-index: 1;
+	 transform: rotate(-5deg);
+	 transform-origin: center center;
+}
+ .halloween--css__cat .halloween--css__cat-neck .halloween--css__neck .halloween--css__neck {
+	 bottom: -28%;
+}
+ .halloween--css__cat .halloween--css__cat-head {
+	 width: 50px;
+	 height: 40px;
+	 background-color: #1c0526;
+	 border-radius: 18px;
+	 bottom: 70px;
+	 left: 18px;
+	 transform: rotate(3deg);
+	 animation: halloween--css--cat-head 15s ease infinite;
+}
+ .halloween--css__cat .halloween--css__cat-head .halloween--css__ear {
+	 width: 24px;
+	 height: 22px;
+	 top: -1px;
+	 left: -1px;
+	 transform: rotate(45deg);
+	 animation: halloween--css--ear-left 15s ease infinite;
+}
+ .halloween--css__cat .halloween--css__cat-head .halloween--css__ear .halloween--css__ear-in {
+	 width: 100%;
+	 height: 100%;
+	 background-color: #1c0526;
+	 transform: skew(35deg);
+	 border-radius: 5px;
+	 overflow: hidden;
+}
+ .halloween--css__cat .halloween--css__cat-head .halloween--css__ear:nth-child(2) {
+	 left: 24px;
+	 top: -1px;
+	 transform: rotate(60deg);
+	 animation: halloween--css--ear-right 15s ease infinite;
+}
+ .halloween--css__moon {
+	 width: 50px;
+	 height: 50px;
+	 top: 10%;
+	 right: 15%;
+	 border-radius: 50%;
+	 z-index: 2;
+	 background-color: #feffff;
+	 box-shadow: 0 0 10px #feffff, 0 0 0 25px rgba(143, 101, 169, 0.3), 0 0 0 50px rgba(143, 101, 169, 0.2), 0 0 0 75px rgba(143, 101, 169, 0.1);
+}
+ .halloween--css__moon .halloween--css__craters {
+	 width: 10px;
+	 height: 10px;
+	 border-radius: 50%;
+	 background-color: rgba(20, 1, 30, 0.15);
+	 left: 10px;
+	 top: 10px;
+}
+ .halloween--css__moon .halloween--css__craters:after {
+	 width: 15px;
+	 height: 15px;
+	 border-radius: 50%;
+	 background-color: rgba(20, 1, 30, 0.15);
+	 left: 15px;
+	 top: 10px;
+}
+ .halloween--css__moon .halloween--css__craters:before {
+	 width: 7px;
+	 height: 7px;
+	 border-radius: 50%;
+	 background-color: rgba(20, 1, 30, 0.15);
+	 left: 0px;
+	 top: 20px;
+}
+ .halloween--css__stars {
+	 width: calc(100% - 40px);
+	 height: 35%;
+	 top: 10px;
+	 left: 20px;
+}
+ .halloween--css__stars .halloween--css__star {
+	 border-radius: 50%;
+	 background-color: #feffff;
+	 animation: halloween--css--twinkle 5s linear infinite;
+	 width: 3px;
+	 height: 3px;
+	 top: 10px;
+	 left: 12px;
+	 opacity: 0.8;
+}
+ .halloween--css__stars .halloween--css__star:nth-child(2) {
+	 top: 20px;
+	 left: 32px;
+	 width: 4px;
+	 height: 4px;
+	 animation: halloween--css---delay: 1s;
+}
+ .halloween--css__stars .halloween--css__star:nth-child(3) {
+	 top: 40px;
+	 left: 6px;
+	 width: 5px;
+	 height: 5px;
+	 animation: halloween--css---delay: 2s;
+}
+ .halloween--css__stars .halloween--css__star:nth-child(4) {
+	 top: 60px;
+	 left: 65px;
+	 width: 3px;
+	 height: 3px;
+	 animation: halloween--css---delay: 3s;
+}
+ .halloween--css__stars .halloween--css__star:nth-child(5) {
+	 top: 52px;
+	 left: 42px;
+	 width: 3px;
+	 height: 3px;
+	 animation: halloween--css---delay: 4s;
+}
+ .halloween--css__ghost-group {
+	 width: 40px;
+	 height: 50px;
+	 bottom: 50px;
+	 left: -150px;
+	 animation: halloween--css--slide 15s ease infinite;
+}
+ .halloween--css__ghost {
+	 width: 40px;
+	 height: 50px;
+	 background: #feffff;
+	 border-radius: 30px 30px 7px 7px;
+	 animation: halloween--css--float 1s linear infinite;
+}
+ .halloween--css__ghost:after {
+	 width: 40px;
+	 height: 50px;
+	 border-radius: 30px 30px 7px 7px;
+	 box-shadow: -10px 0 rgba(20, 1, 30, 0.15);
+	 left: 10px;
+}
+ .halloween--css__ghost .halloween--css__eyes {
+	 background-color: #1c0526;
+	 width: 8px;
+	 height: 10px;
+	 border-radius: 50px;
+	 left: 30%;
+	 top: 20%;
+	 box-shadow: 13px 0 #1c0526;
+}
+ .halloween--css__ghost .halloween--css__bottom {
+	 width: 100%;
+	 height: 15px;
+	 bottom: -10px;
+}
+ .halloween--css__ghost .halloween--css__bottom .halloween--css__bottom-part {
+	 background-color: #3a0956;
+	 border-radius: 5px;
+	 width: 15px;
+	 height: 15px;
+	 transform: rotate(45deg);
+	 left: 3px;
+	 animation: halloween--css--ghost-bottom 3s linear infinite;
+}
+ .halloween--css__ghost .halloween--css__bottom .halloween--css__bottom-part:nth-child(2) {
+	 left: 22px;
+	 animation: halloween--css---delay: 1s;
+}
+ .halloween--css__ghost .halloween--css__bottom .halloween--css__bottom-part:nth-child(3) {
+	 left: 14px;
+	 bottom: 11px;
+	 animation: halloween--css--none;
+	 width: 12px;
+	 height: 12px;
+	 border-radius: 3px;
+	 background-color: white;
+}
+ .halloween--css__pumpkins {
+	 bottom: 0;
+	 height: 100px;
+	 width: 100%;
+}
+ .halloween--css__pumpkin {
+	 bottom: 0;
+	 left: 20px;
+	 background: #c54c17;
+	 width: 100px;
+	 height: 80px;
+	 border-radius: 50px;
+	 z-index: 2;
+}
+ .halloween--css__pumpkin:before {
+	 background-color: #ee8228;
+	 border-radius: 40px;
+	 width: 50%;
+	 height: 100%;
+	 left: 25%;
+}
+ .halloween--css__pumpkin:after {
+	 width: 50%;
+	 height: 100%;
+	 left: 0;
+	 background-color: rgba(160, 32, 3, 0.4);
+	 border-radius: 50px 0 0 50px;
+}
+ .halloween--css__pumpkin .halloween--css__top {
+	 width: 30px;
+	 height: 30px;
+	 border: 10px solid #329399;
+	 border-radius: 0px 50px 0 0;
+	 border-bottom: 0;
+	 border-left: 0;
+	 z-index: -1;
+	 top: -20px;
+	 left: 25px;
+}
+ .halloween--css__pumpkin:nth-child(3) {
+	 left: 60%;
+	 transform: scale(0.7);
+	 transform-origin: bottom center;
+}
+ .halloween--css__pumpkin:nth-child(2) {
+	 left: 60px;
+	 transform: scale(0.5);
+	 transform-origin: bottom center;
+}
+ .halloween--css__broom {
+	 width: 400px;
+	 height: 80px;
+	 left: calc(50% - 200px);
+	 top: 40px;
+	 z-index: 2;
+}
+ .halloween--css__broom .halloween--css__broom-stick {
+	 right: 0;
+	 width: 150px;
+	 height: 14px;
+	 background: linear-gradient(to top, #992f21 50%, #720c0a 50%, #720c0a 100%);
+	 border-radius: 10px;
+	 top: 50px;
+}
+ .halloween--css__broom .halloween--css__broom-stick:before {
+	 width: 30px;
+	 height: 104%;
+	 background: linear-gradient(to top, #992f21 55%, #720c0a 55%, #720c0a 100%);
+	 border-radius: 10px;
+	 left: -18px;
+	 transform: rotate(15deg);
+	 bottom: 3px;
+}
+ .halloween--css__broom .halloween--css__broom-stick:after {
+	 width: 90px;
+	 height: 100%;
+	 background: linear-gradient(to top, #992f21 50%, #720c0a 50%, #720c0a 100%);
+	 border-radius: 5px;
+	 left: -110px;
+	 bottom: 6px;
+	 width: 100px;
+}
+ .halloween--css__broom .halloween--css__broom-stick-shadow {
+	 width: 40px;
+	 height: 100%;
+	 background-color: #3a0956;
+	 right: 0;
+	 border-radius: 0 10px 10px 0;
+	 opacity: 0.3;
+}
+ .halloween--css__broom .halloween--css__broom-hair {
+	 width: 100px;
+	 height: 100px;
+	 right: 250px;
+	 top: 34px;
+}
+ .halloween--css__broom .halloween--css__broom-hair-top {
+	 width: 35px;
+	 height: 35px;
+	 right: 0px;
+	 perspective: 50px;
+}
+ .halloween--css__broom .halloween--css__broom-hair-top:after {
+	 width: 100%;
+	 height: 100%;
+	 background-color: #ee8228;
+	 border-radius: 7px;
+	 transform: rotateY(-35deg);
+}
+ .halloween--css__broom .halloween--css__broom-hair-bottom {
+	 width: 80px;
+	 height: 50px;
+	 right: 23px;
+	 top: -9px;
+	 transform-style: preserve-3d;
+	 -moz-perspective: 38px;
+	 perspective: 38px;
+}
+ .halloween--css__broom .halloween--css__broom-hair-bottom:after {
+	 width: 100%;
+	 height: 100%;
+	 background-color: #d16d1b;
+	 border-radius: 7px;
+	 transform-style: preserve-3d;
+	 transform: rotateY(35deg);
+	 -moz-transform: rotateY(35deg);
+	 z-index: -1;
+}
+ .halloween--css__broom .halloween--css__broom-hair-bottom-reflection {
+	 background-color: #ee8228;
+	 width: 120px;
+	 height: 35px;
+	 transform: rotate(-22deg);
+	 left: -42px;
+	 top: 14px;
+	 border-radius: 50% 50% 30% 20%;
+}
+ .halloween--css__broom .halloween--css__broom-hair-bottom-reflection:before {
+	 width: 50px;
+	 height: 30px;
+	 background-color: #ee8228;
+	 border-radius: 0 0 30px 12px;
+	 top: 6px;
+	 left: -9px;
+	 transform: rotate(15deg) skewX(-10deg);
+}
+ .halloween--css__broom .halloween--css__broom-hair-bottom-reflection:after {
+	 width: 90px;
+	 height: 20px;
+	 top: 2px;
+	 border-radius: 50%;
+	 background-color: #ee8228;
+}
+ .halloween--css__broom .halloween--css__broom-hair-band {
+	 width: 20px;
+	 height: 34px;
+	 background-color: #329399;
+	 right: 25px;
+	 border-radius: 3px;
+	 z-index: 3;
+}
+ .halloween--css__broom .halloween--css__broom-hook {
+	 width: 14px;
+	 height: 30px;
+	 border-radius: 10px;
+	 background-color: #3a0956;
+	 right: 40px;
+	 top: 40px;
+}
+ .halloween--css__broom .halloween--css__broom-hook:after {
+	 width: 100%;
+	 height: 20px;
+	 background-color: #6f3990;
+	 border-radius: 14px;
+	 bottom: 0;
+	 opacity: 0.9;
+}
+ .halloween--css__broom .halloween--css__broom-hook:nth-child(3) {
+	 right: 210px;
+	 top: 36px;
+}
+ .halloween--css__broom .halloween--css__broom-details {
+	 clip-path: polygon(0 55%, 0% 100%, 100% 42%);
+	 left: -50px;
+	 width: 30px;
+	 height: 20px;
+	 bottom: 53px;
+	 background-color: #410b61;
+}
+ .halloween--css__broom .halloween--css__broom-details:nth-child(7) {
+	 top: -15px;
+	 height: 30px;
+	 width: 20px;
+	 transform: rotate(25deg);
+}
+ .halloween--css__broom .halloween--css__broom-lines {
+	 height: 1px;
+	 width: 60px;
+	 background-color: #c54c17;
+	 z-index: 2;
+	 left: 5px;
+	 top: 7px;
+	 transform: rotate(15deg);
+}
+ .halloween--css__broom .halloween--css__broom-lines:before {
+	 width: 80%;
+	 height: 100%;
+	 background-color: #c54c17;
+	 top: 9px;
+	 left: 10px;
+	 transform: rotate(-15deg);
+}
+ .halloween--css__broom .halloween--css__broom-lines:after {
+	 width: 100%;
+	 height: 100%;
+	 background-color: #c54c17;
+	 top: 18px;
+	 left: 5px;
+	 transform: rotate(-30deg);
+}
+ .halloween--css__bat {
+	 width: 40px;
+	 height: 40px;
+	 right: 100px;
+	 top: 14px;
+}
+ .halloween--css__bat .halloween--css__bat-legs {
+	 background-color: #3a0956;
+	 width: 6px;
+	 height: 12px;
+	 border-radius: 5px;
+	 top: -3px;
+	 box-shadow: 12px 0 #3a0956;
+}
+ .halloween--css__bat .halloween--css__bat-body {
+	 background-color: #3a0956;
+	 width: 20px;
+	 height: 28px;
+	 border-radius: 20px;
+	 top: 2px;
+	 left: -1px;
+}
+ .halloween--css__bat .halloween--css__bat-body:after {
+	 width: 3px;
+	 height: 3px;
+	 background-color: #ed42e4;
+	 bottom: 5px;
+	 left: 5px;
+	 border-radius: 3px;
+	 transform-origin: top left;
+	 animation: halloween--css--bat-eyes 15s linear infinite;
+}
+ .halloween--css__bat .halloween--css__bat-body:before {
+	 width: 3px;
+	 height: 3px;
+	 background-color: #ed42e4;
+	 bottom: 5px;
+	 left: 11px;
+	 border-radius: 3px;
+	 transform-origin: top right;
+	 animation: halloween--css--bat-eyes 15s linear infinite;
+}
+ .halloween--css__bat .halloween--css__bat-wing {
+	 clip-path: polygon(25% 1%, 0% 100%, 100% 100%);
+	 width: 18px;
+	 height: 16px;
+	 top: 3px;
+	 left: -4px;
+	 z-index: 2;
+	 background-color: #6f3990;
+}
+ .halloween--css__bat .halloween--css__bat-wing:nth-child(4) {
+	 transform: scaleX(-1);
+	 left: 4px;
+	 z-index: 1;
+	 background-color: #14011e;
+}
+ .halloween--css__bat .halloween--css__bat-ear {
+	 background-color: #3a0956;
+	 width: 10px;
+	 height: 10px;
+	 bottom: 2px;
+	 left: -1px;
+	 clip-path: polygon(50% 100%, 0 0, 100% 0);
+	 transform: rotate(25deg);
+}
+ .halloween--css__bat .halloween--css__bat-ear:nth-child(6) {
+	 left: 8px;
+	 transform: rotate(-25deg);
+}
+ .halloween--css__shadow {
+	 z-index: 1;
+	 background-color: #6c388c;
+}
+ .halloween--css__witch.halloween--css__shadow {
+	 z-index: 1;
+	 transform: scale(1.25, 1.15);
+	 background-color: #6c388c;
+}
+ .halloween--css__witch.halloween--css__shadow *, .halloween--css__witch.halloween--css__shadow *:after, .halloween--css__witch.halloween--css__shadow *:before, .halloween--css__witch.halloween--css__shadow * > * {
+	 background-color: #6c388c;
+	 box-shadow: none;
+}
+ .halloween--css__witch.halloween--css__shadow .halloween--css__head-group, .halloween--css__witch.halloween--css__shadow .halloween--css__hat, .halloween--css__witch.halloween--css__shadow .halloween--css__hat-top, .halloween--css__witch.halloween--css__shadow .halloween--css__bottle {
+	 background-color: transparent;
+}
+ .halloween--css__witch.halloween--css__shadow .halloween--css__hat .halloween--css__hat-top-in, .halloween--css__witch.halloween--css__shadow .halloween--css__hat .halloween--css__hat-top-in:after, .halloween--css__witch.halloween--css__shadow .halloween--css__hat .halloween--css__hat-band, .halloween--css__witch.halloween--css__shadow .halloween--css__hat .halloween--css__hat-band:after, .halloween--css__witch.halloween--css__shadow .halloween--css__hat .halloween--css__hat-bottom {
+	 background-color: #6c388c;
+}
+ .halloween--css__cauldron.halloween--css__shadow {
+	 z-index: 1;
+	 transform: scale(1.15, 1.15);
+	 background-color: #6c388c;
+}
+ .halloween--css__cauldron.halloween--css__shadow *, .halloween--css__cauldron.halloween--css__shadow *:after, .halloween--css__cauldron.halloween--css__shadow *:before, .halloween--css__cauldron.halloween--css__shadow * > * {
+	 background-color: #6c388c;
+	 box-shadow: none;
+}
+ .halloween--css__cauldron.halloween--css__shadow:after, .halloween--css__cauldron.halloween--css__shadow:before {
+	 content: none;
+}
+ .halloween--css__cauldron.halloween--css__shadow .halloween--css__bubbles {
+	 background-color: transparent;
+}
+ .halloween--css__broom.halloween--css__shadow {
+	 background-color: transparent;
+	 transform: scale(1.1, 1.1) translatey(-15px);
+}
+ .halloween--css__broom.halloween--css__shadow *, .halloween--css__broom.halloween--css__shadow *:after, .halloween--css__broom.halloween--css__shadow *:before, .halloween--css__broom.halloween--css__shadow * > * {
+	 background-color: #410b61;
+	 box-shadow: none;
+}
+ .halloween--css__broom.halloween--css__shadow .halloween--css__broom-stick, .halloween--css__broom.halloween--css__shadow .halloween--css__broom-stick:after, .halloween--css__broom.halloween--css__shadow .halloween--css__broom-stick:before {
+	 background: #410b61;
+}
+ .halloween--css__broom.halloween--css__shadow .halloween--css__bat {
+	 background-color: transparent;
+}
+ .halloween--css__broom.halloween--css__shadow .halloween--css__bat * {
+	 background-color: #410b61;
+}
+ .halloween--css__broom.halloween--css__shadow .halloween--css__broom-hair, .halloween--css__broom.halloween--css__shadow .halloween--css__broom-hair-bottom {
+	 background-color: transparent;
+}
+ .halloween--css__shelf.halloween--css__shadow {
+	 background-color: #501e70;
+	 z-index: 1;
+}
+ .halloween--css__shelf.halloween--css__shadow *, .halloween--css__shelf.halloween--css__shadow *:after, .halloween--css__shelf.halloween--css__shadow *:before, .halloween--css__shelf.halloween--css__shadow * > * {
+	 background: #501e70;
+	 background-color: #501e70;
+	 box-shadow: none;
+}
+ .halloween--css__shelf.halloween--css__shadow .halloween--css__base {
+	 background: linear-gradient(to right, #501e70 0%, #410b61 100%);
+	 transform: scale(1.03, 1.1) translate(6px, -2px);
+}
+ .halloween--css__shelf.halloween--css__shadow .halloween--css__bottle, .halloween--css__shelf.halloween--css__shadow .halloween--css__candle, .halloween--css__shelf.halloween--css__shadow .halloween--css__drippings, .halloween--css__shelf.halloween--css__shadow .halloween--css__books, .halloween--css__shelf.halloween--css__shadow .halloween--css__shelf-hooks, .halloween--css__shelf.halloween--css__shadow .halloween--css__crystal-ball, .halloween--css__shelf.halloween--css__shadow .halloween--css__shelf-hooks:after {
+	 transform: scale(1.05, 1.1) translateX(10px);
+}
+ .halloween--css__shelf.halloween--css__shadow .halloween--css__bottle-3 {
+	 transform: scale(1.05, 1.15) translate(10px, -10px) rotate(-90deg);
+}
+ .halloween--css__shelf.halloween--css__shadow .halloween--css__spider, .halloween--css__shelf.halloween--css__shadow .halloween--css__spider:after, .halloween--css__shelf.halloween--css__shadow .halloween--css__thread {
+	 transform: scale(1.1, 1.1) translateX(12px);
+}
+ .halloween--css__shelf.halloween--css__shadow .halloween--css__spider {
+	 animation: halloween--css--spider-shadow 5s ease infinite;
+}
+ .halloween--css__shelf.halloween--css__shadow .halloween--css__candles, .halloween--css__shelf.halloween--css__shadow .halloween--css__candle:after, .halloween--css__shelf.halloween--css__shadow .halloween--css__skull, .halloween--css__shelf.halloween--css__shadow .halloween--css__bottle, .halloween--css__shelf.halloween--css__shadow .halloween--css__books, .halloween--css__shelf.halloween--css__shadow .halloween--css__spider-group, .halloween--css__shelf.halloween--css__shadow .halloween--css__flame, .halloween--css__shelf.halloween--css__shadow .halloween--css__crystal-ball, .halloween--css__shelf.halloween--css__shadow .halloween--css__ball:after {
+	 background-color: transparent;
+}
+ .halloween--css__shelf.halloween--css__shadow .halloween--css__bottle *, .halloween--css__shelf.halloween--css__shadow .halloween--css__bottle *:after, .halloween--css__shelf.halloween--css__shadow .halloween--css__skull *, .halloween--css__shelf.halloween--css__shadow .halloween--css__skull *:before, .halloween--css__shelf.halloween--css__shadow .halloween--css__candy-bowl *, .halloween--css__shelf.halloween--css__shadow .halloween--css__thread, .halloween--css__shelf.halloween--css__shadow .halloween--css__spider *, .halloween--css__shelf.halloween--css__shadow .halloween--css__spider-leg, .halloween--css__shelf.halloween--css__shadow .halloween--css__spider-leg:after, .halloween--css__shelf.halloween--css__shadow .halloween--css__crystal-ball *, .halloween--css__shelf.halloween--css__shadow .halloween--css__stand:after, .halloween--css__shelf.halloween--css__shadow .halloween--css__flame-in, .halloween--css__shelf.halloween--css__shadow .halloween--css__flame-in:before {
+	 background-color: #410b61 !important;
+	 background: #410b61;
+}
+ .halloween--css__shelf.halloween--css__shadow .halloween--css__candy-bowl {
+	 background-color: #410b61;
+}
+ .halloween--css__shelf.halloween--css__shadow .halloween--css__candy-bowl:before {
+	 content: none;
+}
+ .halloween--css__shelf.halloween--css__shadow .halloween--css__candy-bowl, .halloween--css__shelf.halloween--css__shadow .halloween--css__skull {
+	 transform: scale(1.1, 1.2) translateX(10px);
+}
+ .halloween--css__shelf.halloween--css__shadow .halloween--css__shelf-hooks, .halloween--css__shelf.halloween--css__shadow .halloween--css__shelf-hooks:after {
+	 transform: scale(1.05, 1.1) translate(6px, -2px);
+}
+ .halloween--css__shelf.halloween--css__shadow .halloween--css__book:after {
+	 content: none;
+}
+ .halloween--css__pumpkins.halloween--css__shadow {
+	 background-color: transparent;
+	 transform: scale(1.05, 1.1) translateY(-5px);
+}
+ .halloween--css__pumpkins.halloween--css__shadow *, .halloween--css__pumpkins.halloween--css__shadow *:after, .halloween--css__pumpkins.halloween--css__shadow *:before, .halloween--css__pumpkins.halloween--css__shadow * > * {
+	 background-color: #410b61;
+	 box-shadow: none;
+}
+ .halloween--css__pumpkins.halloween--css__shadow .halloween--css__top {
+	 background-color: transparent;
+	 border-color: #410b61;
+}
+ .halloween--css__window-group.halloween--css__shadow {
+	 background-color: transparent;
+	 transform: scale(1.1, 1.1) translate(-8px, -5px);
+}
+ .halloween--css__window-group.halloween--css__shadow .halloween--css__window {
+	 background-color: #410b61;
+	 border-color: transparent;
+}
+ .halloween--css__window-group.halloween--css__shadow .halloween--css__window:before {
+	 content: none;
+}
+ .halloween--css__window-group.halloween--css__shadow .halloween--css__window:after {
+	 background-color: #410b61;
+}
+ .halloween--css__cat-tail.halloween--css__shadow {
+	 transform: scale(1.15, 1.1) translate(-8px, 0px);
+	 background-color: #501e70;
+	 z-index: -1;
+}
+ .halloween--css__cat-tail.halloween--css__shadow .halloween--css__tail {
+	 background-color: #501e70;
+}
+ .halloween--css__cat-tail.halloween--css__highlight {
+	 transform: translate(1px, 1px);
+	 background-color: #a786bb;
+	 z-index: 0;
+}
+ .halloween--css__cat-tail.halloween--css__highlight .halloween--css__tail {
+	 background-color: #a786bb;
+}
+ .halloween--css__cat.halloween--css__highlight {
+	 transform: translate(-1px, -2px) scale(0.92);
+	 transform-origin: bottom center;
+}
+ .halloween--css__cat.halloween--css__highlight * {
+	 background-color: #8f65a9;
+}
+ .halloween--css__cat.halloween--css__highlight .halloween--css__neck {
+	 background-color: #8f65a9;
+}
+ .halloween--css__cat.halloween--css__highlight .halloween--css__cat-head .halloween--css__ear {
+	 background-color: transparent;
+}
+ .halloween--css__cat.halloween--css__highlight .halloween--css__cat-head .halloween--css__ear .halloween--css__ear-in {
+	 background-color: #8f65a9;
+}
+@keyframes halloween--css--twinkle {
+	 50% {
+		 opacity: 0.3;
+	}
+}
+@keyframes halloween--css--right-arm {
+	 35%, 65% {
+		 transform: rotate(0deg);
+	}
+	 40%, 60% {
+		 transform: rotate(90deg);
+	}
+}
+@keyframes halloween--css--liquid {
+	 35%, 65% {
+		 transform: scale(1);
+	}
+	 40%, 60% {
+		 transform: scale(0.5, 1.5);
+	}
+}
+@keyframes halloween--css--bubble-grow {
+	 45%, 90% {
+		 transform: scale(1);
+	}
+	 60%, 70% {
+		 transform: scale(1.15);
+	}
+}
+@keyframes halloween--css--right-eyebrow {
+	 50%, 72% {
+		 transform: perspective(50px) rotateY(35deg) rotate(-5deg);
+	}
+	 55%, 71% {
+		 transform: perspective(50px) rotateY(35deg) rotate(0deg) translateY(-3px);
+	}
+}
+@keyframes halloween--css--left-eyebrow {
+	 50%, 72% {
+		 transform: perspective(50px) rotateY(35deg) rotate(10deg);
+	}
+	 55%, 71% {
+		 transform: perspective(50px) rotateY(35deg) rotate(0deg) translateY(-3px);
+	}
+}
+@keyframes halloween--css--liquid-2 {
+	 39%, 61% {
+		 opacity: 0;
+	}
+	 40%, 60% {
+		 opacity: 1;
+		 transform: scaleX(2);
+	}
+	 55% {
+		 transform: scaleX(5);
+	}
+	 62% {
+		 transform: scaleX(0);
+		 opacity: 0;
+	}
+}
+@keyframes halloween--css--flame {
+	 50% {
+		 transform: scale(0.9) rotate(45deg);
+	}
+}
+@keyframes halloween--css--flicker {
+	 21%, 24% {
+		 transform: rotate(0deg);
+	}
+	 22%, 23% {
+		 transform: rotate(40deg);
+	}
+}
+@keyframes halloween--css--eyes {
+	 50% {
+		 transform: scale(0.5);
+		 opacity: 0.5;
+	}
+}
+@keyframes halloween--css--stick {
+	 50% {
+		 transform: rotate(0deg) translateX(20px);
+	}
+}
+@keyframes halloween--css--left-arm {
+	 50% {
+		 transform: rotate(-30deg) translateX(10px);
+	}
+}
+@keyframes halloween--css--witch-eyes {
+	 50% {
+		 transform: translateX(2px);
+	}
+}
+@keyframes halloween--css--bubble {
+	 50% {
+		 transform: scale(1.2);
+	}
+}
+@keyframes halloween--css--spider {
+	 50% {
+		 transform: translateY(20px);
+	}
+}
+@keyframes halloween--css--spider-shadow {
+	 50% {
+		 transform: scale(1.1, 1.1) translateX(12px) translateY(20px);
+	}
+}
+@keyframes halloween--css--float {
+	 50% {
+		 transform: translateY(3px);
+	}
+}
+@keyframes halloween--css--slide {
+	 0%, 15%, 55%, 100% {
+		 transform: translateX(0px);
+	}
+	 25%, 45% {
+		 transform: translateX(170px);
+	}
+}
+@keyframes halloween--css--cat {
+	 0%, 20%, 50%, 100% {
+		 transform: scalex(1);
+	}
+	 21%, 45% {
+		 transform: scalex(1.1);
+	}
+}
+@keyframes halloween--css--cat-head {
+	 0%, 20%, 50%, 100% {
+		 transform: scaleY(1);
+	}
+	 21%, 45% {
+		 transform: scaleY(0.85) translateY(2px);
+	}
+}
+@keyframes halloween--css--ear-right {
+	 0%, 20%, 50%, 100% {
+		 transform: rotate(60deg);
+	}
+	 21%, 45% {
+		 transform: rotate(80deg);
+	}
+}
+@keyframes halloween--css--ear-left {
+	 0%, 20%, 50%, 100% {
+		 transform: rotate(45deg);
+	}
+	 21%, 45% {
+		 transform: rotate(25deg);
+	}
+}
+@keyframes halloween--css--tail {
+	 0%, 20%, 75%, 100% {
+		 transform: rotate(-13deg);
+	}
+	 21%, 45% {
+		 transform: rotate(0deg) scale(1.1);
+	}
+	 10%, 55%, 85% {
+		 transform: rotate(13deg);
+	}
+}
+@keyframes halloween--css--ghost-bottom {
+	 50% {
+		 transform: translateY(2px) rotate(45deg) scale(1.1);
+	}
+}
+@keyframes halloween--css--drip {
+	 20%, 100% {
+		 transform: translateY(60px);
+	}
+}
+@keyframes halloween--css--bat-eyes {
+	 49%, 53% {
+		 transform: scale(1);
+	}
+	 50%, 52% {
+		 transform: scale(1.3, 0.3);
+	}
+}

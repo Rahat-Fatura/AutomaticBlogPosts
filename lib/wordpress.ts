@@ -93,7 +93,7 @@ export const wordpressClient = {
   async getAllPosts(): Promise<WPPost[]> {
     try {
       return await wpFetch<WPPost[]>(
-        `/wp-json/wp/v2/posts?context=edit&status=any&per_page=100&orderby=date&order=desc`
+        `/wp-json/wp/v2/posts?context=edit&status=publish,draft&per_page=100&orderby=date&order=desc`
       )
     } catch (e) {
       if (e instanceof Error && e.message.includes('rest_forbidden_context')) {
@@ -175,4 +175,31 @@ export const wordpressClient = {
     const data = (await res.json()) as { id: number; source_url?: string }
     return { id: data.id, url: data.source_url ?? '' }
   },
+}
+
+export async function publishToWordPress(data: {
+  title: string;
+  content: string;
+  excerpt: string;
+  status: 'draft' | 'publish';
+}): Promise<{ success: boolean; postId?: number; error?: string }> {
+  try {
+    const post = await wordpressClient.createPost({
+      title: { raw: data.title },
+      content: { raw: data.content },
+      excerpt: { raw: data.excerpt },
+      status: data.status,
+    } as Partial<WPPost>);
+
+    return {
+      success: true,
+      postId: post.id,
+    };
+  } catch (error) {
+    console.error('WordPress publish error:', error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error',
+    };
+  }
 }

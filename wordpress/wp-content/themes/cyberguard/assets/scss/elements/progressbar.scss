@@ -1,0 +1,96 @@
+.pxl--progressbar {
+    @include transition(width 1.4s ease);
+    width: 0;
+    &.vertical {
+        @include transition(height 1.4s ease);
+        height: 0;
+    }
+}
+.pxl-progressbar-1 {
+    &.style1 {
+        .pxl-progressbar--wrap {
+            height: 4px;
+            border-radius: 0;                
+            background-color: #EEE;
+            .pxl--progressbar {
+                height: 4px;
+                border-radius: 0;
+                background-color: $primary_color;                
+                position: relative;
+            }
+        }
+        .pxl--title {
+            font-family: Outfit;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: $link_color;
+        }
+        .pxl--percentage {
+            color: $primary_color;   
+            margin-bottom: 15px;
+            font-family: Outfit;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .pxl--item + .pxl--item {
+            margin-top: 27px;
+        }
+    }
+    &.style2 {
+        .pxl--item {
+            position: relative;
+        }
+        .pxl--meta {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%,-50%);
+            @media (max-width: 767px) {
+                position: relative;
+            }
+        }
+        .pxl-progressbar--wrap {
+            height: 8px;
+            border-radius: 8px;                
+            background-color: #f1f1f1;
+            width: 56%;
+            margin-left: 153px;
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-left: 0;
+            }
+            .pxl--progressbar {
+                height: 8px;
+                border-radius: 24px;
+                background-color: $primary_color;                
+                position: relative;
+            }
+        }
+        .pxl--title {
+            font-size: 16px;
+            color: #070302;
+            font-weight: 500;
+            font-family: "Inter";
+            margin: 0;
+        }
+        .pxl--percentage {
+            font-size: 14px;
+            color: #262626;
+            font-weight: 500;
+            font-family: "Inter";
+        }
+        .pxl--item + .pxl--item {
+            margin-top: 34px;
+        }
+    }
+}
+
+body.rtl {
+    
+}

@@ -1,10 +1,10 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { useToast } from '@/components/ui/Toast'
 
-export default function LoginPage() {
+function LoginPageContent() {
   const router = useRouter()
   const params = useSearchParams()
   const toast = useToast()
@@ -91,5 +91,13 @@ export default function LoginPage() {
         </form>
       </div>
     </div>
+  )
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={<div className="text-slate-400">Yükleniyor...</div>}>
+      <LoginPageContent />
+    </Suspense>
   )
 }

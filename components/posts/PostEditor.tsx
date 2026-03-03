@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
-import Link from '@tiptap/extension-link'
 import Image from '@tiptap/extension-image'
 import type { WPPost } from '@/lib/types'
 import ImageUploader from '@/components/posts/ImageUploader'
@@ -74,7 +73,6 @@ export default function PostEditor({
     immediatelyRender: false,
     extensions: [
       StarterKit,
-      Link.configure({ openOnClick: false }),
       Image.configure({ inline: false }),
     ],
     content: mode === 'new' ? (initialContent ?? '<p>İçerik buraya...</p>') : '<p>İçerik buraya...</p>',
@@ -213,6 +211,37 @@ export default function PostEditor({
       toast.push({ variant: 'error', message })
     } finally {
       setAiLoading(false)
+    }
+  }
+
+  async function saveToDraftsDb() {
+    setSaving(true)
+    try {
+      const html = editor?.getHTML() ?? ''
+      const res = await fetch('/api/drafts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          title,
+          content: html,
+          metaDescription: metaDescription || null,
+          status: 'pending',
+          originalUrl: originalUrl || undefined,
+        }),
+      })
+
+      const json = (await res.json().catch(() => null)) as { id?: string; error?: string } | null
+      if (!res.ok) {
+        throw new Error(json?.error || 'Taslak kaydedilemedi')
+      }
+
+      toast.push({ variant: 'success', message: 'Taslak PostgreSQL\'e kaydedildi.' })
+      goPanelPosts()
+    } catch (e) {
+      const message = e instanceof Error ? e.message : 'Kaydetme başarısız.'
+      toast.push({ variant: 'error', message })
+    } finally {
+      setSaving(false)
     }
   }
 

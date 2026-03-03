@@ -1,0 +1,1020 @@
+/*  
+
+	Author : Amedea
+	Author URI : https://amedeapro.com
+	Author : Moskva Yigit
+	Author URI : http://moskvayigit.com
+	Version : 0.0.3.9
+
+	Table of Contents
+	- Thanksgiving Special #1
+	- Thanksgiving Minimal
+	 
+*/
+
+.ki-description{width:100%;}
+	
+/*----------------------------
+	.-- Thanksgiving Special #1
+-----------------------------*/
+
+.thanksgiving--css-container{
+	height: 100vh;
+	width: 100%;
+}
+
+.thanksgiving--css__special{
+	background: #87341c;
+}
+
+svg.thanksgiving-css__message{
+  position: absolute;
+  z-index:2;
+  top:0px;
+  left: 50%;
+  margin-left: -458px;
+}
+
+.thanksgiving-css {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index:3
+}
+
+.thanksgiving-css__leg {
+  position: absolute;
+  top: 90px;
+  z-index: -100;
+}
+
+.thanksgiving-css__leg_left {
+  left: 48%;
+}
+
+.thanksgiving-css__leg_right {
+  left: 63%;
+}
+
+.thanksgiving-css__leg-shin {
+  width: 10px;
+  height: 40px;
+  background: #f8931f;
+  position: relative;
+  z-index: 100;
+  background: linear-gradient(to right, #f7ad59 0%, #f9a94a 100%);
+}
+
+.thanksgiving-css__leg-foot {
+  width: 40px;
+  height: 10px;
+  background-color: #f8931f;
+  border-top-left-radius: 100% 100%;
+  border-top-right-radius: 100% 100%;
+  border-bottom-right-radius: 14% 100%;
+  border-bottom-left-radius: 14% 100%;
+  position: absolute;
+  z-index: 200;
+  bottom: -5px;
+}
+
+.thanksgiving-css__leg-foot-left {
+  left: -30px;
+  transform-origin: left;
+  transform: rotate(0deg);
+  position: absolute;
+}
+
+.thanksgiving-css__leg-foot-right {
+  left: 0px;
+  position: absolute;
+  transform-origin: left;
+  transform: rotate(-20deg);
+  -webkit-animation: shake .5s infinite;
+  animation: shake .5s infinite;
+}
+
+.thanksgiving-css__feathers {
+  position: absolute;
+  z-index: 50;
+  left: -100%;
+  top: 20%;
+  transform: tronsform-origin(left bottom);
+  transform: rotate(-5deg);
+}
+
+.thanksgiving-css__feather {
+  width: 180px;
+  height: 60px;
+  background-color: #aa6615;
+  border-top-left-radius: 40% 100%;
+  border-top-right-radius: 100% 70%;
+  border-bottom-right-radius: 100% 100%;
+  border-bottom-left-radius: 40% 100%;
+  box-shadow: 0px 0px 0px #000000;
+  position: absolute;
+  transform-origin: right center;
+}
+
+.thanksgiving-css__feather-1 {
+  transform: rotate(20deg);
+  background-color: #a95026;
+}
+
+.thanksgiving-css__feather-2 {
+  transform: rotate(40deg);
+  background-color: #ab8427;
+}
+
+.thanksgiving-css__feather-3 {
+  transform: rotate(60deg)
+}
+
+.thanksgiving-css__feather-4 {
+  transform: rotate(80deg);
+  background-color: #f8931f;
+}
+
+.thanksgiving-css__feather-5 {
+  transform: rotate(100deg);
+  background-color: #f8931f;
+}
+
+.thanksgiving-css__feather-6 {
+  transform: rotate(120deg)
+}
+
+.thanksgiving-css__feather-7 {
+  transform: rotate(140deg);
+  background-color: #ab8427;
+}
+
+.thanksgiving-css__feather-8 {
+  transform: rotate(160deg);
+  background-color: #a95026;
+}
+
+.thanksgiving-css__feather-9 {
+  transform: rotate(180deg)
+}
+
+.thanksgiving-css__bod {
+  position: relative;
+  width: 120px;
+  height: 100px;
+  background-color: #7b2e12;
+  background: linear-gradient(to right, rgba(123, 46, 18, 1) 0%, rgba(64, 19, 3, 1) 100%);
+  border-top-left-radius: 100% 100%;
+  border-top-right-radius: 100% 100%;
+  border-bottom-right-radius: 50% 80%;
+  border-bottom-left-radius: 50% 80%;
+  z-index: 900;
+}
+
+.thanksgiving-css__sign {
+  position: absolute;
+  z-index: 1300;
+  width: 140px;
+  height: 40px;
+  line-height: 45px;
+  left: -10px;
+  background: #fff;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(207, 205, 207, 1) 100%);
+  top: 45px;
+  transform: rotate(5deg);
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.thanksgiving-css__sign::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: -5px;
+  background-color: #7b2e12;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 30% 30%;
+  border-bottom-left-radius: 30% 30%;
+  transform: rotate(90deg);
+}
+
+.thanksgiving-css__sign::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #7b2e12;
+  display: block;
+  position: absolute;
+  right: -12px;
+  top: 15px;
+  background-color: #7b2e12;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 30% 30%;
+  border-bottom-left-radius: 30% 30%;
+  transform: rotate(-90deg);
+}
+
+.thanksgiving-css__head {
+  position: absolute;
+  z-index: 1000;
+  left: 20%;
+  top: -50px;
+  width: 70px;
+  height: 75px;
+  background-color: #c4694a;
+  background: linear-gradient(to right, rgba(194, 142, 124, 1) 0%, rgba(196, 104, 74, 1) 100%);
+  border-radius: 100%;
+}
+
+.thanksgiving-css__eye {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  position: absolute;
+  top: -55px;
+  z-index: 1050;
+}
+
+.thanksgiving-css__eye-left {
+  left: 15px;
+}
+
+.thanksgiving-css__eye-right {
+  left: 55px;
+}
+
+.thanksgiving-css__eye-iris {
+  position: absolute;
+  top: 36px;
+  left: 20px;
+  z-index: 1060;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background: #000;
+}
+
+.thanksgiving-css__beak {
+  position: absolute;
+  top: -14px;
+  left: 40px;
+  z-index: 1040;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px 20px 0 20px;
+  border-color: #f8d04f transparent transparent transparent;
+  border-radius: 200px;
+}
+
+.thanksgiving-css__hat {
+  position: absolute;
+  top: -115px;
+  left: 15px;
+  z-index: 1100;
+  transform: tronsform-origin(left bottom);
+  transform: rotate(-10deg);
+}
+
+.thanksgiving-css__hat-pipe {
+  width: 70px;
+  height: 60px;
+  background-color: #000;
+  background: linear-gradient(to right, rgba(74, 74, 74, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  border-bottom: 15px solid #fff;
+  z-index: 1200;
+  position: relative;
+}
+
+.thanksgiving-css__hat-brim {
+  position: absolute;
+  bottom: -15px;
+  left: -60%;
+  z-index: 1150;
+  width: 160px;
+  height: 26px;
+  background-color: #000;
+  background: linear-gradient(to right, rgba(74, 74, 74, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  border-top-left-radius: 100% 100%;
+  border-top-right-radius: 100% 100%;
+  border-bottom-right-radius: 57% 32%;
+  border-bottom-left-radius: 66% 32%;
+}
+
+.thanksgiving-css__shake {
+  -webkit-animation: shake 3.5s infinite;
+  animation: shake 3.5s infinite;
+}
+
+.thanksgiving-css__rock {
+  -webkit-animation: rock 3.5s infinite;
+  animation: rock 3.5s infinite;
+}
+
+.thanksgiving-css__bounce {
+  -webkit-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+}
+
+@keyframes shake {
+  0% {
+    -webkt-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkt-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  100% {
+    -webkt-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rock {
+  0% {
+    -webkit-transform: translate(10px);
+    transform: translate(10px);
+  }
+  50% {
+    -webkit-transform: translate(0px);
+    transform: translate(0px);
+  }
+  100% {
+    -webkit-transform: translate(10px);
+    transform: translate(10px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+  30% {
+    -webkit-transform: translate(0px, 3px);
+    transform: translate(0px, 3px);
+  }
+  75% {
+    -webkit-transform: translate(0px, -3px);
+    transform: translate(0px, -3px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+}
+
+/*----------------------------
+	.-- Thanksgiving Minimal
+-----------------------------*/
+
+.thanksgiving--css__minimal{
+	--container-width: 50vw;
+	--color-black: #323232;
+	--color-cream: #fef3e9;
+	--max-width: 50vh;
+	--text-timing: 0.25s;
+	--text-unit: 10;
+	--spacing-unit: 0.68;
+	--degree-unit: calc(var(--spacing-unit) * 2);
+	--margin: 5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--color-cream);
+	line-height: 1.8;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: var(--stroke-color);
+    text-align: center;
+	overflow:hidden;
+}
+
+.thanksgiving--css__minimal {
+	--background-color: var(--color-cream);
+	--stroke-color: var(--color-black);
+	background: var(--background-color);
+}
+
+.thanksgiving--css__minimal.dark-mode {
+	--background-color: var(--color-black);
+	--stroke-color: var(--color-cream);
+	background: var(--background-color);
+}
+
+
+#thanksgiving-css__minimal-container {
+	width: var(--container-width);
+	height: calc(var(--container-width) * 1.4);
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	max-width: var(--max-width);
+	max-height: calc(var(--max-width) * 1.4);
+	margin-top: -6%;
+}
+
+#thanksgiving-css__minimal-container > div {
+	position: absolute;
+}
+
+#thanksgiving-css__turkey-container {
+	position: absolute;
+	width: 43%;
+	height: auto;
+	margin-bottom: 35%;
+	bottom: 0;
+	margin-right: -6%;
+}
+
+#thanksgiving-css__sun-container {
+	position: relative;
+	width: 38%;
+	height: auto;
+	margin-bottom: 35%;
+    bottom: 0;
+	opacity: 0;
+}
+
+.thanksgiving-css__sun-animation {
+	animation: fade, shift;
+	animation-duration: calc(var(--text-timing) * 4);
+	animation-fill-mode: forwards;
+	animation-delay: calc(var(--text-timing) * 3);
+}
+
+@keyframes shift {
+	0% {
+		margin-left: 0;
+	}
+
+	100% {
+		margin-left: -12%;
+	}
+}
+
+#thanksgiving-css__rays-container {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 0;
+	opacity: 0;
+}
+
+.thanksgiving-css__ray-animation {
+	animation: fade calc(var(--text-timing) * 3) forwards 1s;
+}
+
+#thanksgiving-css__rays > * {
+	stroke-width: 6px;
+	stroke: #fe911b;
+}
+
+#thanksgiving-css__turkey-container svg,
+#thanksgiving-css__leaf-container svg,
+#thanksgiving-css__sun-container svg,
+#thanksgiving-css__rays-container svg {
+	width: auto;
+	height: 100%;
+	display: block;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	overflow: visible;
+}
+
+#thanksgiving-css__turkey > *,
+#thanksgiving-css__leaf > *:not(.thanksgiving-css__dot) {
+	fill: none;
+	stroke: var(--stroke-color);
+}
+
+#thanksgiving-css__leaf-container svg .thanksgiving-css__dot {
+	fill: var(--stroke-color);
+}
+
+.thanksgiving-css__stroke-animation {
+	animation: svgFill 1.25s ease-out forwards;
+}
+
+.thanksgiving-css__ray-stroke-animation {
+	animation: svgFill ease-out infinite alternate 1s;
+}
+
+#thanksgiving-css__rays .thanksgiving-css__ray:nth-of-type(odd) {
+	animation-delay: 1.25s;
+}
+
+#thanksgiving-css__rays .thanksgiving-css__ray:first-of-type {
+	animation-duration: 1.8s;
+}
+
+#thanksgiving-css__rays .thanksgiving-css__ray:nth-of-type(2) {
+	animation-duration: 2s;
+}
+
+#thanksgiving-css__rays .thanksgiving-css__raynth-of-type(3) {
+	animation-duration: 1.7s;
+}
+
+#thanksgiving-css__rays .thanksgiving-css__raynth-of-type(4) {
+	animation-duration: 2.15s;
+}
+
+#thanksgiving-css__rays .thanksgiving-css__raynth-of-type(5) {
+	animation-duration: 1.85s;
+}
+
+#thanksgiving-css__rays .thanksgiving-css__raynth-of-type(6) {
+	animation-duration: 2.2s;
+}
+
+#thanksgiving-css__rays .thanksgiving-css__raynth-of-type(7) {
+	animation-duration: 2.2s;
+}
+
+#thanksgiving-css__rays .thanksgiving-css__raynth-of-type(8) {
+	animation-duration: 2.15s;
+}
+
+#thanksgiving-css__turkey > * {
+	stroke-width: 6px;
+}
+
+#thanksgiving-css__leaf > *:not(.thanksgiving-css__dot) {
+	stroke-width: 5px;
+}
+
+#thanksgiving-css__leaf > * {
+	stroke-width: none;
+	fill: var(--stroke-color);
+}
+
+#thanksgiving-css__inner-sun > * {
+	stroke-width: none;
+	fill: #fe911b;
+}
+
+@keyframes svgFill {
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+#thanksgiving-css__leaf > *:not(.thanksgiving-css__dot) {
+	animation-delay: 1s;
+}
+
+#thanksgiving-css__leaf > .thanksgiving-css__dot {
+	opacity: 0;
+}
+
+.thanksgiving-css__leaf-dot-aniamtion {
+	animation: fade calc(var(--text-timing) * 1) forwards 1.5s;
+}
+
+#thanksgiving-css__leaf > .thanksgiving-css__dot:first-of-type {
+	animation-delay: 1.75s;
+}
+
+#thanksgiving-css__leaf > .thanksgiving-css__dot:last-of-type {
+	animation-delay: 2s;
+}
+
+#thanksgiving-css__leaf-container {
+	width: 35%;
+	height: auto;
+	bottom: 0;
+	margin-right: -3%;
+	margin-bottom: 5%;
+	position: relative;
+	opacity: 0;
+	overflow: visible;
+}
+
+.thanksgiving-css__leaf-animation {
+	animation: fade calc(var(--text-timing) * 1) forwards 1s;
+}
+
+#thanksgiving-css__leaf-container span {
+	position: absolute;
+	width: 70%;
+	height: 10%;
+	bottom: 0;
+	background: var(--stroke-color);
+	margin-bottom: -24%;
+	border-radius: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+
+.thanksgiving-css__leaf-shadow-animation {
+	animation: fade calc(var(--text-timing) * 2) forwards 1.75s;
+}
+
+#thanksgiving-css__text-container {
+	width: 86%;
+	padding-bottom: 86%;
+	bottom: 0;
+	margin-bottom: 16%;
+	position: relative;
+}
+
+#thanksgiving-css__text-container:before {
+	width: 100%;
+	height: 50%;
+	bottom: 0;
+}
+
+#thanksgiving-css__text-container:after {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h2 {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	bottom: -25px;
+	font-size: min(max(3.5vw), 3.5vh);
+	color: #fe911b;
+	opacity: 0;
+	font-family: Helvetica;
+}
+
+.thanksgiving-css__h2-animation {
+	animation: fade calc(var(--text-timing) * 1) forwards 1s;
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h2 span {
+	position: relative;
+	padding-bottom: 2%;
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h2 span:before {
+	width: 100%;
+	height: 10%;
+	background: #fe911b;
+	bottom: 0;
+	border-radius: 25% / 250%;
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h2 span:first-letter {
+	letter-spacing: min(max(1vw), 2vh);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 {
+	position: absolute;
+	color: var(--stroke-color);
+	text-transform: uppercase;
+	height: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-size: min(max(4.5vw), 4.5vh);
+	font-family: Helvetica;
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span {
+	position: absolute;
+	height: 100%;
+	transform-origin: bottom center;
+	line-height: 1;
+	width: 6%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	opacity: 0;
+}
+
+.thanksgiving-css__h1-animation {
+	animation: fade calc(var(--text-timing) * 1) forwards;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:first-of-type {
+	animation-delay: calc(var(--text-timing) * 0.25);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(2) {
+	animation-delay: calc(var(--text-timing) * 0.5);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(3) {
+	animation-delay: calc(var(--text-timing) * 0.75);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(4) {
+	animation-delay: calc(var(--text-timing) * 1);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(5) {
+	animation-delay: calc(var(--text-timing) * 1.75);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(6) {
+	animation-delay: calc(var(--text-timing) * 2);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(7) {
+	animation-delay: calc(var(--text-timing) * 2.25);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(8) {
+	animation-delay: calc(var(--text-timing) * 2.5);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(9) {
+	animation-delay: calc(var(--text-timing) * 2.75);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(10) {
+	animation-delay: calc(var(--text-timing) * 3);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(11) {
+	animation-delay: calc(var(--text-timing) * 3.25);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(12) {
+	animation-delay: calc(var(--text-timing) * 3.5);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(13) {
+	animation-delay: calc(var(--text-timing) * 3.75);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(14) {
+	animation-delay: calc(var(--text-timing) * 4);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(15) {
+	animation-delay: calc(var(--text-timing) * 4.25);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(16) {
+	animation-delay: calc(var(--text-timing) * 4.5);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(17) {
+	animation-delay: calc(var(--text-timing) * 4.75);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(18) {
+	animation-delay: calc(var(--text-timing) * 5);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:first-of-type,
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(2),
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(3) {
+	transform: rotate(-90deg);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:last-of-type,
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(17),
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(16) {
+	transform: rotate(90deg);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:first-of-type,
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:last-of-type {
+	margin-top: calc(calc(var(--text-unit) * 1%) * 2);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(2),
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(17) {
+	margin-top: calc(calc(var(--text-unit) * 1%) * 1);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(3) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(calc(var(--spacing-unit) * -1) + calc(var(--degree-unit) * -6))
+		)
+	);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(16) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(var(--spacing-unit) + calc(var(--degree-unit) * 6))
+		)
+	);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(4) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(calc(var(--spacing-unit) * -1) + calc(var(--degree-unit) * -5))
+		)
+	);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(15) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(var(--spacing-unit) + calc(var(--degree-unit) * 5))
+		)
+	);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(5) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(calc(var(--spacing-unit) * -1) + calc(var(--degree-unit) * -4))
+		)
+	);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(14) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(var(--spacing-unit) + calc(var(--degree-unit) * 4))
+		)
+	);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(6) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(calc(var(--spacing-unit) * -1) + calc(var(--degree-unit) * -3))
+		)
+	);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(13) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(var(--spacing-unit) + calc(var(--degree-unit) * 3))
+		)
+	);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(7) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(calc(var(--spacing-unit) * -1) + calc(var(--degree-unit) * -2))
+		)
+	);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(12) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(var(--spacing-unit) + calc(var(--degree-unit) * 2))
+		)
+	);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(8) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(calc(var(--spacing-unit) * -1) + calc(var(--degree-unit) * -1))
+		)
+	);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(11) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(var(--spacing-unit) + calc(var(--degree-unit) * 1))
+		)
+	);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(9) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(calc(var(--spacing-unit) * -1) + calc(var(--degree-unit) * 0))
+		)
+	);
+}
+
+#thanksgiving-css__text-container .thanksgiving-css__h1 span:nth-of-type(10) {
+	transform: rotate(
+		calc(
+			calc(var(--text-unit) * 1deg) *
+				calc(var(--spacing-unit) + calc(var(--degree-unit) * 0))
+		)
+	);
+}
+
+.thanksgiving-css__meta {
+	position: absolute;
+	opacity: 0.7;
+	z-index: 101;
+}
+
+button.thanksgiving-css__meta {
+	font-size: 0.8rem;
+	cursor: pointer;
+	background: transparent;
+	color: var(--stroke-color);
+	transition: all 0.3s;
+	border: 3px solid var(--stroke-color);
+	line-height: 1.5;
+	border-radius: 30px;
+	height: 30px;
+	padding: 0 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.05rem;
+}
+
+button.thanksgiving-css__meta:hover {
+	transform: scale(1.05);
+}
+
+#thanksgiving-css__replay {
+	bottom: var(--margin);
+	right: var(--margin);
+}
+
+#thanksgiving-css__color-toggle {
+	border-radius: 50%;
+	width: 30px;
+	overflow: hidden;
+	padding: 0;
+	bottom: var(--margin);
+	left: var(--margin);
+}
+
+#thanksgiving-css__color-toggle:after {
+	width: 50%;
+	height: 100%;
+	background: var(--stroke-color);
+	top: 0;
+	right: 0;
+}
+
+button.thanksgiving-css__meta:focus {
+	outline: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	
+	#thanksgiving-css__color-toggle {
+		top: var(--margin);
+	}
+
+	#thanksgiving-css__replay {
+		top: var(--margin);
+	}
+
+	button.thanksgiving-css__meta {
+		font-size: 0.7rem;
+		cursor: pointer;
+		background: transparent;
+		color: var(--stroke-color);
+		transition: all 0.3s;
+		border: 3px solid var(--stroke-color);
+		line-height: 1.5;
+		border-radius: 26px;
+		height: 26px;
+		padding: 0 14px;
+	}
+
+
+	#thanksgiving-css__color-toggle {
+		width: 26px;
+	}
+
+}

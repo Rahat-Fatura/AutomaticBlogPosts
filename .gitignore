@@ -46,7 +46,25 @@ next-env.d.ts
 test-*.js
 
 # prisma
-/prisma/migrations/
+
 
 # docker
-docker-compose.yml
+# docker-compose.yml (commented out to allow committing)
+
+# WordPress - exclude dynamic content only
+/wordpress/wp-content/uploads/
+/wordpress/wp-content/cache/
+/wordpress/wp-content/upgrade/
+/wordpress/wp-content/upgrade-temp-backup/
+/wordpress/wp-content/backup*/
+/wordpress/wp-content/backups/
+/wordpress/wp-content/ai1wm-backups/
+
+# WordPress core files (will be managed by Docker)
+/wordpress/wp-admin/
+/wordpress/wp-includes/
+/wordpress/*.php
+/wordpress/license.txt
+/wordpress/readme.html
+/wordpress/.htaccess
+/wordpress/wp-config.php

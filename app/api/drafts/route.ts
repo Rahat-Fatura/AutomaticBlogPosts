@@ -71,28 +71,59 @@ export async function POST(req: Request) {
     const content = (body.content || '').trim()
     const originalUrl = (body.originalUrl || '').trim()
 
-    if (!title || !content || !originalUrl) {
-      return NextResponse.json({ error: 'title, content, originalUrl gerekli' }, { status: 400 })
-    }
-
-    const announcement = await prisma.announcement.findUnique({
-      where: { originalUrl },
-      select: { id: true },
-    })
-
-    if (!announcement) {
-      return NextResponse.json(
-        { error: 'Announcement bulunamadı. Önce /api/scraper/sync çalıştır.' },
-        { status: 400 }
-      )
+    if (!title || !content) {
+      return NextResponse.json({ error: 'title, content gerekli' }, { status: 400 })
     }
 
     const isPublished = body.status === 'published'
 
+    // If originalUrl provided, link to announcement
+    let announcementId: string | null = null
+    if (originalUrl) {
+      const announcement = await prisma.announcement.findUnique({
+        where: { originalUrl },
+        select: { id: true },
+      })
+      if (announcement) {
+        announcementId = announcement.id
+      }
+    }
+
+    // If no announcement, create a dummy one for AI-generated content
+    if (!announcementId) {
+      const dummySource = await prisma.source.findFirst({
+        where: { name: 'AI Generated' },
+      })
+      
+      let sourceId = dummySource?.id
+      if (!sourceId) {
+        const newSource = await prisma.source.create({
+          data: {
+            name: 'AI Generated',
+            url: 'https://ai-generated.local',
+            isActive: false,
+          },
+        })
+        sourceId = newSource.id
+      }
+
+      const announcement = await prisma.announcement.create({
+        data: {
+          sourceId,
+          title: title.substring(0, 100),
+          content: content.substring(0, 500),
+          originalUrl: `ai-generated-${Date.now()}`,
+          contentHash: `ai-${Date.now()}`,
+          fetchedAt: new Date(),
+        },
+      })
+      announcementId = announcement.id
+    }
+
     const draft = await prisma.draft.upsert({
-      where: { announcementId: announcement.id },
+      where: { announcementId },
       create: {
-        announcementId: announcement.id,
+        announcementId,
         title,
         content,
         metaDescription: body.metaDescription ?? null,
