@@ -26,6 +26,7 @@ services:
       - GEMINI_API_KEY=${GEMINI_API_KEY}
       - CRON_SCHEDULE=${CRON_SCHEDULE:-0 */6 * * *}
       - AUTO_GENERATE_AI=${AUTO_GENERATE_AI:-true}
+      - COOKIE_SECURE=false
     depends_on:
       postgres:
         condition: service_healthy
