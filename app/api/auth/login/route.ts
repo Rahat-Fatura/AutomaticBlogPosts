@@ -51,7 +51,7 @@ export async function POST(req: Request) {
     value: token,
     httpOnly: true,
     sameSite: 'lax',
-    secure: process.env.NODE_ENV === 'production',
+    secure: process.env.COOKIE_SECURE !== 'false' && process.env.NODE_ENV === 'production',
     path: '/',
     maxAge: 7 * 24 * 60 * 60,
   })
