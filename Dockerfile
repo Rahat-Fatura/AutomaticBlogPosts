@@ -52,4 +52,4 @@ COPY --from=builder /app/scraper ./scraper
 EXPOSE 3000
 
 # Start the application
-CMD ["npm", "start"]
+CMD ["sh", "-c", "npx prisma migrate deploy && npm start"]
